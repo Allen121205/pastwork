@@ -1,3 +1,5 @@
+CODING:
+
 #Background
 Rect(0, 0, 400, 400, fill=gradient('black', 'midnightblue', start='bottom-right'))
 Line(400, 0, 0, 400, fill='white', lineWidth=600, dashes=(1, 30))
