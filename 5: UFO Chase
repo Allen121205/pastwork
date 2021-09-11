@@ -51,13 +51,14 @@ def moveTrail(fighter, trail):
 
 def onMouseMove(mouseX, mouseY):
     
-    # Move each fighter to the end of the previous fighter's trail.
+    # Moves each fighter to the end of the previous fighter's trail.
 
     moveFighter(fighter1, mouseX, mouseY)
     moveFighter(fighter2, trail1.x1, trail1.y1)
     moveFighter(fighter3, trail2.x1, trail2.y1)
 
-    # Move each trail to follow the fighter.
+    # Moves each trail to follow the fighter.
+    
     moveTrail(fighter1, trail1)
     moveTrail(fighter2, trail2)
     moveTrail(fighter3, trail3)
