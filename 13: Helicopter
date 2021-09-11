@@ -3,6 +3,7 @@ CANVAS LINK:
 https://academy.cs.cmu.edu/sharing/purpleFish1215
 (Use the arrow keys to move the helicopter)
 
+
 CODING:
 
 app.background = gradient('deepSkyBlue', 'lightSkyBlue', start='top')
