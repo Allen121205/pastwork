@@ -1,0 +1,23 @@
+CANVAS LINK: 
+
+https://academy.cs.cmu.edu/sharing/lawnGreenDeer7225
+(Move your mouse around the canvas to draw lines)
+
+
+CODING:
+
+app.background = 'black'
+
+Line(200, 0, 200, 400, fill='white')
+Line(0, 200, 400, 200, fill='white')
+
+def onMouseMove(mouseX, mouseY):
+    
+    if (mouseX<200 and mouseY<200):
+        Line(0, 0, mouseX, mouseY, fill=gradient('red', 'black'))
+    if (mouseX<200 and mouseY>200):
+        Line(0, 400, mouseX, mouseY, fill=gradient('blue', 'black'))
+    if (mouseX>200 and mouseY<200):
+        Line(400, 0, mouseX, mouseY, fill=gradient('green', 'black'))
+    if (mouseX>200 and mouseY>200):
+        Line(400, 400, mouseX, mouseY, fill=gradient('yellow', 'black'))
