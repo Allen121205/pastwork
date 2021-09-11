@@ -1,0 +1,35 @@
+CANVAS LINK: 
+
+https://academy.cs.cmu.edu/sharing/whiteSmokeMouse9755
+(Move your mouse around the canvas for the red balls to move)
+
+
+CODING: 
+
+app.background = gradient('dodgerBlue', 'navy')
+
+dot1 = Circle(100, 100, 10, fill=gradient('lightCoral', 'crimson'))
+dot2 = Circle(300, 100, 10, fill=gradient('lightCoral', 'crimson'))
+dot3 = Circle(100, 300, 10, fill=gradient('lightCoral', 'crimson'))
+dot4 = Circle(300, 300, 10, fill=gradient('lightCoral', 'crimson'))
+
+Line(0, 200, 400, 200, dashes=True)
+Line(200, 400, 200, 0, dashes=True)
+
+def onMouseMove(mouseX, mouseY):
+    
+    # Dot 1 
+    dot1.centerX=mouseX
+    dot1.centerY=mouseY
+    
+    # Dot 2
+    dot2.centerX=400-mouseX
+    dot2.centerY=mouseY
+    
+    # Dot 3 
+    dot3.centerX=mouseX
+    dot3.centerY=400-mouseY
+    
+    # Dot 4 
+    dot4.centerX=400-mouseX
+    dot4.centerY=400-mouseY
