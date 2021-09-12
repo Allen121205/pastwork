@@ -1,6 +1,7 @@
 CANVAS LINK: 
 
-https://academy.cs.cmu.edu/sharing/steelBlueCrocodile8289
+https://academy.cs.cmu.edu/sharing/cadetBlueKitten3788
+
 (Click on the Canvas for the sun, sky, cars, and people to move)
 
 
@@ -10,7 +11,6 @@ CODING:
 TimeBox = Rect(330, 340, 70, 60, fill='lightGrey', border='black')
 Time1 = Label('6:00', 365, 360, size=25, fill='black')
 Time2 = Label('AM', 365, 385, size=22, fill='black')
-
 
 ###Sky
 Sky1 = Rect(0, 0, 400, 240, fill=gradient('yellow', 'orange', 'red', start='bottom'), opacity=60, visible=True)
@@ -279,593 +279,619 @@ Rect(230, 165, 30, 65, border='Gray')
 Rect(235, 135, 20, 30, border='Gray')
 Rect(242, 115, 6, 20, border='Gray')
 
-Rect(240, 140, 10, 20, fill='dodgerBlue', border='Gray')
-Rect(235, 170, 20, 55, fill='dodgerBlue', border='Gray')
+Rect(240, 140, 10, 20, fill='dodgerBlue')
+Rect(235, 170, 20, 55, fill='dodgerBlue')
 Rect(240, 230, 10, 10, fill='blue', border='Gray')
 
+Line(235, 178.6, 255, 178.6, lineWidth=4)
+Line(235, 188.33, 255, 188.33, lineWidth=4)
+Line(235, 197.5, 255, 197.5, lineWidth=4)
+Line(235, 207.5, 255, 207.5, lineWidth=4)
+Line(235, 217.5, 255, 217.5, lineWidth=4)
+
+Line(240, 146.6, 250, 146.6, lineWidth=3)
+Line(240, 153.3, 250, 153.3, lineWidth=3)
+
 ###People Group 1 
-PgOne1_1 = Circle(105, 340, 1.8)
-PgOne1_2 = Line(104.5, 342, 102, 344, lineWidth=1.2)
-PgOne1_3 = Line(102, 344, 100, 343, lineWidth=1.2)
-PgOne1_4 = Line(105.5, 342, 108, 344, lineWidth=1.2)
-PgOne1_5 = Line(108, 344, 109, 346, lineWidth=1.2)
-PgOne1_6 = Circle(109, 346, 0.5)
-PgOne1_7 = Circle(100, 343, 0.5)
-PgOne1_8 = Line(105, 342, 103, 348, lineWidth=1.5)
-PgOne1_9 = Line(103, 348, 104, 350, lineWidth=1.5)
-PgOne1_10 = Line(105, 342, 106, 347, lineWidth=1.5)
-PgOne1_11 = Line(106, 347, 108, 350, lineWidth=1.5)
-    
-PgOne2_1 = Circle(180, 355, 1.8)
-PgOne2_2 = Line(179.5, 357, 176, 360, lineWidth=1.2)
-PgOne2_3 = Line(180.5, 357, 184, 360, lineWidth=1.2)
-PgOne2_4 = Circle(176, 360, 0.5)
-PgOne2_5 = Circle(184, 360, 0.5)
-PgOne2_6 = Line(180, 357, 178, 365, lineWidth=1.5)
-PgOne2_7 = Line(180, 357, 182, 365, lineWidth=1.5)
+PG1 = Group(
+    Circle(105, 340, 1.8),
+    Line(104.5, 342, 102, 344, lineWidth=1.2),
+    Line(102, 344, 100, 343, lineWidth=1.2),
+    Line(105.5, 342, 108, 344, lineWidth=1.2),
+    Line(108, 344, 109, 346, lineWidth=1.2),
+    Circle(109, 346, 0.5),
+    Circle(100, 343, 0.5),
+    Line(105, 342, 103, 348, lineWidth=1.5),
+    Line(103, 348, 104, 350, lineWidth=1.5),
+    Line(105, 342, 106, 347, lineWidth=1.5),
+    Line(106, 347, 108, 350, lineWidth=1.5),
+        
+    Circle(180, 355, 1.8),
+    Line(179.5, 357, 176, 360, lineWidth=1.2),
+    Line(180.5, 357, 184, 360, lineWidth=1.2),
+    Circle(176, 360, 0.5),
+    Circle(184, 360, 0.5),
+    Line(180, 357, 178, 365, lineWidth=1.5),
+    Line(180, 357, 182, 365, lineWidth=1.5),
 
-PgOne3_1 = Circle(315, 343, 1.8)
-PgOne3_2 = Line(315, 345, 318, 347, lineWidth=1.2)
-PgOne3_3 = Line(318, 347, 320, 346, lineWidth=1.2)
-PgOne3_4 = Line(314.5, 345, 312, 347, lineWidth=1.2)
-PgOne3_5 = Line(312, 347, 311, 349, lineWidth=1.2)
-PgOne3_6 = Circle(311, 349, 0.5)
-PgOne3_7 = Circle(320, 346, 0.5)
-PgOne3_8 = Line(315, 345, 317, 351, lineWidth=1.5)
-PgOne3_9 = Line(317, 351, 316, 353, lineWidth=1.5)
-PgOne3_10 = Line(315, 345, 314, 350, lineWidth=1.5)
-PgOne3_11 = Line(314, 350, 312, 353, lineWidth=1.5)
+    Circle(315, 343, 1.8),
+    Line(315, 345, 318, 347, lineWidth=1.2),
+    Line(318, 347, 320, 346, lineWidth=1.2),
+    Line(314.5, 345, 312, 347, lineWidth=1.2),
+    Line(312, 347, 311, 349, lineWidth=1.2),
+    Circle(311, 349, 0.5),
+    Circle(320, 346, 0.5),
+    Line(315, 345, 317, 351, lineWidth=1.5),
+    Line(317, 351, 316, 353, lineWidth=1.5),
+    Line(315, 345, 314, 350, lineWidth=1.5),
+    Line(314, 350, 312, 353, lineWidth=1.5),
 
-PgOne4_1 = Circle(32, 353, 1.8)
-PgOne4_2 = Line(31.5, 355, 28, 358, lineWidth=1.2)
-PgOne4_3 = Line(32.5, 355, 36, 358, lineWidth=1.2)
-PgOne4_4 = Circle(28, 358, 0.5)
-PgOne4_5 = Circle(36, 358, 0.5)
-PgOne4_6 = Line(32, 355, 30, 363, lineWidth=1.5)
-PgOne4_7 = Line(32, 355, 34, 363, lineWidth=1.5)
+    Circle(32, 353, 1.8),
+    Line(31.5, 355, 28, 358, lineWidth=1.2),
+    Line(32.5, 355, 36, 358, lineWidth=1.2),
+    Circle(28, 358, 0.5),
+    Circle(36, 358, 0.5),
+    Line(32, 355, 30, 363, lineWidth=1.5),
+    Line(32, 355, 34, 363, lineWidth=1.5),
 
-PgOne5_1 = Circle(50, 355, 1.8)
-PgOne5_2 = Line(49.5, 357, 46, 360, lineWidth=1.2)
-PgOne5_3 = Line(50.5, 357, 54, 360, lineWidth=1.2)
-PgOne5_4 = Circle(46, 360, 0.5)
-PgOne5_5 = Circle(54, 360, 0.5)
-PgOne5_6 = Line(50, 357, 48, 365, lineWidth=1.5)
-PgOne5_7 = Line(50, 357, 52, 365, lineWidth=1.5)
+    Circle(50, 355, 1.8),
+    Line(49.5, 357, 46, 360, lineWidth=1.2),
+    Line(50.5, 357, 54, 360, lineWidth=1.2),
+    Circle(46, 360, 0.5),
+    Circle(54, 360, 0.5),
+    Line(50, 357, 48, 365, lineWidth=1.5),
+    Line(50, 357, 52, 365, lineWidth=1.5),
+    )
 
 ###Car Group 1
-CgOne1_1 = Rect(335, 246, 6, 5, fill='blue')
-CgOne1_2 = Rect(338, 243, 20, 8, fill='blue')
-CgOne1_3 = Oval(340, 247, 16, 8, fill='blue')
-CgOne1_4 = Circle(334, 249, 2, fill='blue')
-CgOne1_5 = Oval(358, 247, 6, 8, fill='blue')
-CgOne1_6 = Polygon(338, 244, 343, 237, 352, 237, 357, 244, fill='blue')
-CgOne1_7 = Polygon(341, 244, 344, 239, 346, 239, 346, 244)
-CgOne1_8 = Polygon(348, 244, 348, 239, 350, 239, 353, 244)
-CgOne1_9 = Circle(339, 251, 3)
-CgOne1_10 = Circle(354, 251, 3)
+CG1 = Group( 
+    Rect(335, 246, 6, 5, fill='blue'),
+    Rect(338, 243, 20, 8, fill='blue'),
+    Oval(340, 247, 16, 8, fill='blue'),
+    Circle(334, 249, 2, fill='blue'),
+    Oval(358, 247, 6, 8, fill='blue'),
+    Polygon(338, 244, 343, 237, 352, 237, 357, 244, fill='blue'),
+    Polygon(341, 244, 344, 239, 346, 239, 346, 244),
+    Polygon(348, 244, 348, 239, 350, 239, 353, 244),
+    Circle(339, 251, 3),
+    Circle(354, 251, 3),
 
-CgOne2_1 = Rect(133, 313, 6, 5, fill='red')
-CgOne2_2 = Rect(116, 310, 20, 8, fill='red')
-CgOne2_3 = Oval(134, 314, 16, 8, fill='red')
-CgOne2_4 = Circle(140, 316, 2, fill='red')
-CgOne2_5 = Oval(116, 314, 6, 8, fill='red')
-CgOne2_6 = Polygon(136, 311, 131, 304, 123, 304, 117, 311, fill='red')
-CgOne2_7 = Polygon(133, 311, 130, 306, 128, 306, 128, 311)
-CgOne2_8 = Polygon(126, 311, 126, 306, 124, 306, 121, 311)
-CgOne2_9 = Circle(135, 318, 3)
-CgOne2_10 = Circle(120, 318, 3)
+    Rect(133, 313, 6, 5, fill='red'),
+    Rect(116, 310, 20, 8, fill='red'),
+    Oval(134, 314, 16, 8, fill='red'),
+    Circle(140, 316, 2, fill='red'),
+    Oval(116, 314, 6, 8, fill='red'),
+    Polygon(136, 311, 131, 304, 123, 304, 117, 311, fill='red'),
+    Polygon(133, 311, 130, 306, 128, 306, 128, 311),
+    Polygon(126, 311, 126, 306, 124, 306, 121, 311),
+    Circle(135, 318, 3),
+    Circle(120, 318, 3),
 
-CgOne3_1 = Rect(283, 297, 6, 5, fill=rgb(55, 55, 55))
-CgOne3_2 = Rect(266, 294, 20, 8, fill=rgb(55, 55, 55))
-CgOne3_3 = Oval(284, 298, 16, 8, fill=rgb(55, 55, 55))
-CgOne3_4 = Circle(290, 300, 2, fill=rgb(55, 55, 55))
-CgOne3_5 = Oval(266, 295, 6, 12, fill=rgb(55, 55, 55))
-CgOne3_6 = Oval(274, 289, 18, 4, fill=rgb(55, 55, 55))
-CgOne3_7 = Polygon(291, 297, 283, 289, 275, 289, 266, 289, 266, 302, fill=rgb(55, 55, 55))
-CgOne3_8 = Polygon(285, 295, 280, 290, 278, 290, 278, 295)
-CgOne3_9 = Polygon(276, 295, 276, 290, 272, 290, 272, 295)
-CgOne3_10 = Polygon(270, 295, 270, 290, 268, 290, 268, 290, 266, 292, 266, 295)
-CgOne3_11 = Circle(268, 293, 2)
-CgOne3_12 = Circle(285, 302, 3)
-CgOne3_13 = Circle(270, 302, 3)
-
-CgOne4_1 = Polygon(75, 268, 75, 261, 84, 261, 84, 252, 95, 252, 95, 268, fill='snow', border='slateGray')
-CgOne4_2 = Polygon(94, 268, 94, 252, 100, 246, 107, 246, 107, 268, fill='snow', border='slateGray')
-CgOne4_3 = Rect(110, 246, 65, 22, fill='snow', border='slateGray')
-CgOne4_4 = Circle(82, 269, 3.3)
-CgOne4_5 = Circle(113, 269, 3.3)
-CgOne4_6 = Circle(121, 269, 3.3)
-CgOne4_7 = Circle(163, 269, 3.3)
-CgOne4_8 = Circle(171, 269, 3.3)
-CgOne4_9 = Rect(107, 263, 3, 5, fill='slateGray')
-CgOne4_10 = Rect(87, 255, 5, 5)
-
-CgOne5_1 = Rect(217, 281, 6, 5, fill='orangeRed')
-CgOne5_2 = Rect(220, 278, 20, 8, fill='orangeRed')
-CgOne5_3 = Oval(224, 282, 16, 8, fill='orangeRed')
-CgOne5_4 = Circle(218, 284, 2, fill='orangeRed')
-CgOne5_5 = Oval(244, 279, 6, 12, fill='orangeRed')
-CgOne5_6 = Oval(236, 273, 18, 4, fill='orangeRed')
-CgOne5_7 = Polygon(219, 281, 227, 273, 235, 273, 244, 273, 244, 286, fill='orangeRed')
-CgOne5_8 = Polygon(225, 279, 230, 274, 232, 274, 232, 279)
-CgOne5_9 = Polygon(234, 279, 234, 274, 238, 274, 238, 279)
-CgOne5_10 = Polygon(240, 279, 240, 274, 242, 274, 242, 274, 244, 276, 244, 279)
-CgOne5_11 = Circle(242, 277, 2)
-CgOne5_12 = Circle(222, 286, 3)
-CgOne5_13 = Circle(240, 286, 3)
+    Rect(283, 297, 6, 5, fill=rgb(55, 55, 55)),
+    Rect(266, 294, 20, 8, fill=rgb(55, 55, 55)),
+    Oval(284, 298, 16, 8, fill=rgb(55, 55, 55)),
+    Circle(290, 300, 2, fill=rgb(55, 55, 55)),
+    Oval(266, 295, 6, 12, fill=rgb(55, 55, 55)),
+    Oval(274, 289, 18, 4, fill=rgb(55, 55, 55)),
+    Polygon(291, 297, 283, 289, 275, 289, 266, 289, 266, 302, fill=rgb(55, 55, 55)),
+    Polygon(285, 295, 280, 290, 278, 290, 278, 295),
+    Polygon(276, 295, 276, 290, 272, 290, 272, 295),
+    Polygon(270, 295, 270, 290, 268, 290, 268, 290, 266, 292, 266, 295),
+    Circle(268, 293, 2),
+    Circle(285, 302, 3),
+    Circle(270, 302, 3),
+    
+    Polygon(75, 268, 75, 261, 84, 261, 84, 252, 95, 252, 95, 268, fill='snow', border='slateGray'),
+    Polygon(94, 268, 94, 252, 100, 246, 107, 246, 107, 268, fill='snow', border='slateGray'),
+    Rect(110, 246, 65, 22, fill='snow', border='slateGray'),
+    Circle(82, 269, 3.3),
+    Circle(113, 269, 3.3),
+    Circle(121, 269, 3.3),
+    Circle(163, 269, 3.3),
+    Circle(171, 269, 3.3),
+    Rect(107, 263, 3, 5, fill='slateGray'),
+    Rect(87, 255, 5, 5),
+    
+    Rect(217, 281, 6, 5, fill='orangeRed'),
+    Rect(220, 278, 20, 8, fill='orangeRed'),
+    Oval(224, 282, 16, 8, fill='orangeRed'),
+    Circle(218, 284, 2, fill='orangeRed'),
+    Oval(244, 279, 6, 12, fill='orangeRed'),
+    Oval(236, 273, 18, 4, fill='orangeRed'),
+    Polygon(219, 281, 227, 273, 235, 273, 244, 273, 244, 286, fill='orangeRed'),
+    Polygon(225, 279, 230, 274, 232, 274, 232, 279),
+    Polygon(234, 279, 234, 274, 238, 274, 238, 279),
+    Polygon(240, 279, 240, 274, 242, 274, 242, 274, 244, 276, 244, 279),
+    Circle(242, 277, 2),
+    Circle(222, 286, 3),
+    Circle(240, 286, 3)
+    )
 
 ###People Group 2 
-PgTwo1_1 = Circle(180, 355, 1.8)
-PgTwo1_2 = Line(179.5, 357, 176, 360, lineWidth=1.2)
-PgTwo1_3 = Line(180.5, 357, 184, 360, lineWidth=1.2)
-PgTwo1_4 = Circle(176, 360, 0.5)
-PgTwo1_5 = Circle(184, 360, 0.5)
-PgTwo1_6 = Line(180, 357, 178, 365, lineWidth=1.5)
-PgTwo1_7 = Line(180, 357, 182, 365, lineWidth=1.5)
-
-PgTwo2_1 = Circle(195, 355, 1.8)
-PgTwo2_2 = Line(194.5, 357, 191, 360, lineWidth=1.2)
-PgTwo2_3 = Line(195.5, 357, 199, 360, lineWidth=1.2)
-PgTwo2_4 = Circle(191, 360, 0.5)
-PgTwo2_5 = Circle(199, 360, 0.5)
-PgTwo2_6 = Line(195, 357, 193, 365, lineWidth=1.5)
-PgTwo2_7 = Line(195, 357, 197, 365, lineWidth=1.5)
-
-PgTwo3_1 = Circle(315, 353, 1.8)
-PgTwo3_2 = Line(315, 355, 318, 357, lineWidth=1.2)
-PgTwo3_3 = Line(318, 357, 320, 356, lineWidth=1.2)
-PgTwo3_4 = Line(314.5, 355, 312, 357, lineWidth=1.2)
-PgTwo3_5 = Line(312, 357, 311, 359, lineWidth=1.2)
-PgTwo3_6 = Circle(311, 359, 0.5)
-PgTwo3_7 = Circle(320, 356, 0.5)
-PgTwo3_8 = Line(315, 355, 317, 361, lineWidth=1.5)
-PgTwo3_9 = Line(317, 361, 316, 363, lineWidth=1.5)
-PgTwo3_10 = Line(315, 355, 314, 360, lineWidth=1.5)
-PgTwo3_11 = Line(314, 360, 312, 363, lineWidth=1.5)
-
-PgTwo4_1 = Circle(15, 358, 1.8)
-PgTwo4_2 = Line(15, 360, 18, 362, lineWidth=1.2)
-PgTwo4_3 = Line(18, 362, 20, 361, lineWidth=1.2)
-PgTwo4_4 = Line(14.5, 360, 12, 362, lineWidth=1.2)
-PgTwo4_5 = Line(12, 362, 11, 364, lineWidth=1.2)
-PgTwo4_6 = Circle(11, 364, 0.5)
-PgTwo4_7 = Circle(20, 361, 0.5)
-PgTwo4_8 = Line(15, 360, 17, 366, lineWidth=1.5)
-PgTwo4_9 = Line(17, 366, 16, 368, lineWidth=1.5)
-PgTwo4_10 = Line(15, 360, 14, 365, lineWidth=1.5)
-PgTwo4_11 = Line(14, 365, 12, 368, lineWidth=1.5)
-
-PgTwo5_1 = Circle(75, 340, 1.8)
-PgTwo5_2 = Line(74.5, 342, 72, 344, lineWidth=1.2)
-PgTwo5_3 = Line(72, 344, 70, 343, lineWidth=1.2)
-PgTwo5_4 = Line(75.5, 342, 78, 344, lineWidth=1.2)
-PgTwo5_5 = Line(78, 344, 79, 346, lineWidth=1.2)
-PgTwo5_6 = Circle(79, 346, 0.5)
-PgTwo5_7 = Circle(70, 343, 0.5)
-PgTwo5_8 = Line(75, 342, 73, 348, lineWidth=1.5)
-PgTwo5_9 = Line(73, 348, 74, 350, lineWidth=1.5)
-PgTwo5_10 = Line(75, 342, 76, 347, lineWidth=1.5)
-PgTwo5_11 = Line(76, 347, 78, 350, lineWidth=1.5)
-
-PgTwo6_1 = Circle(95, 341, 1.8)
-PgTwo6_2 = Line(94.5, 343, 92, 345, lineWidth=1.2)
-PgTwo6_3 = Line(92, 345, 90, 344, lineWidth=1.2)
-PgTwo6_4 = Line(95.5, 343, 98, 345, lineWidth=1.2)
-PgTwo6_5 = Line(98, 345, 99, 347, lineWidth=1.2)
-PgTwo6_6 = Circle(99, 347, 0.5)
-PgTwo6_7 = Circle(90, 344, 0.5)
-PgTwo6_8 = Line(95, 343, 93, 349, lineWidth=1.5)
-PgTwo6_9 = Line(93, 349, 94, 351, lineWidth=1.5)
-PgTwo6_10 = Line(95, 343, 96, 348, lineWidth=1.5)
-PgTwo6_11 = Line(96, 348, 98, 351, lineWidth=1.5)
-
-PgTwo7_1 = Circle(265, 351, 1.8)
-PgTwo7_2 = Line(264.5, 353, 262, 355, lineWidth=1.2)
-PgTwo7_3 = Line(262, 355, 260, 354, lineWidth=1.2)
-PgTwo7_4 = Line(265.5, 353, 268, 355, lineWidth=1.2)
-PgTwo7_5 = Line(268, 355, 269, 357, lineWidth=1.2)
-PgTwo7_6 = Circle(269, 357, 0.5)
-PgTwo7_7 = Circle(260, 354, 0.5)
-PgTwo7_8 = Line(265, 353, 263, 359, lineWidth=1.5)
-PgTwo7_9 = Line(263, 359, 264, 361, lineWidth=1.5)
-PgTwo7_10 = Line(265, 353, 266, 358, lineWidth=1.5)
-PgTwo7_11 = Line(266, 358, 268, 361, lineWidth=1.5)
-
-PgTwo8_1 = Circle(110, 365, 1.8)
-PgTwo8_2 = Line(109.5, 367, 106, 370, lineWidth=1.2)
-PgTwo8_3 = Line(110.5, 367, 114, 370, lineWidth=1.2)
-PgTwo8_4 = Circle(106, 370, 0.5)
-PgTwo8_5 = Circle(114, 370, 0.5)
-PgTwo8_6 = Line(110, 367, 108, 375, lineWidth=1.5)
-PgTwo8_7 = Line(110, 367, 112, 375, lineWidth=1.5)
+PG2 = Group(
+    Circle(180, 355, 1.8),
+    Line(179.5, 357, 176, 360, lineWidth=1.2),
+    Line(180.5, 357, 184, 360, lineWidth=1.2),
+    Circle(176, 360, 0.5),
+    Circle(184, 360, 0.5),
+    Line(180, 357, 178, 365, lineWidth=1.5),
+    Line(180, 357, 182, 365, lineWidth=1.5),
+    
+    Circle(195, 355, 1.8),
+    Line(194.5, 357, 191, 360, lineWidth=1.2),
+    Line(195.5, 357, 199, 360, lineWidth=1.2),
+    Circle(191, 360, 0.5),
+    Circle(199, 360, 0.5),
+    Line(195, 357, 193, 365, lineWidth=1.5),
+    Line(195, 357, 197, 365, lineWidth=1.5),
+    
+    Circle(315, 353, 1.8),
+    Line(315, 355, 318, 357, lineWidth=1.2),
+    Line(318, 357, 320, 356, lineWidth=1.2),
+    Line(314.5, 355, 312, 357, lineWidth=1.2),
+    Line(312, 357, 311, 359, lineWidth=1.2),
+    Circle(311, 359, 0.5),
+    Circle(320, 356, 0.5),
+    Line(315, 355, 317, 361, lineWidth=1.5),
+    Line(317, 361, 316, 363, lineWidth=1.5),
+    Line(315, 355, 314, 360, lineWidth=1.5),
+    Line(314, 360, 312, 363, lineWidth=1.5),
+    
+    Circle(15, 358, 1.8),
+    Line(15, 360, 18, 362, lineWidth=1.2),
+    Line(18, 362, 20, 361, lineWidth=1.2),
+    Line(14.5, 360, 12, 362, lineWidth=1.2),
+    Line(12, 362, 11, 364, lineWidth=1.2),
+    Circle(11, 364, 0.5),
+    Circle(20, 361, 0.5),
+    Line(15, 360, 17, 366, lineWidth=1.5),
+    Line(17, 366, 16, 368, lineWidth=1.5),
+    Line(15, 360, 14, 365, lineWidth=1.5),
+    Line(14, 365, 12, 368, lineWidth=1.5),
+    
+    Circle(75, 340, 1.8),
+    Line(74.5, 342, 72, 344, lineWidth=1.2),
+    Line(72, 344, 70, 343, lineWidth=1.2),
+    Line(75.5, 342, 78, 344, lineWidth=1.2),
+    Line(78, 344, 79, 346, lineWidth=1.2),
+    Circle(79, 346, 0.5),
+    Circle(70, 343, 0.5),
+    Line(75, 342, 73, 348, lineWidth=1.5),
+    Line(73, 348, 74, 350, lineWidth=1.5),
+    Line(75, 342, 76, 347, lineWidth=1.5),
+    Line(76, 347, 78, 350, lineWidth=1.5),
+    
+    Circle(95, 341, 1.8),
+    Line(94.5, 343, 92, 345, lineWidth=1.2),
+    Line(92, 345, 90, 344, lineWidth=1.2),
+    Line(95.5, 343, 98, 345, lineWidth=1.2),
+    Line(98, 345, 99, 347, lineWidth=1.2),
+    Circle(99, 347, 0.5),
+    Circle(90, 344, 0.5),
+    Line(95, 343, 93, 349, lineWidth=1.5),
+    Line(93, 349, 94, 351, lineWidth=1.5),
+    Line(95, 343, 96, 348, lineWidth=1.5),
+    Line(96, 348, 98, 351, lineWidth=1.5),
+    
+    Circle(265, 351, 1.8),
+    Line(264.5, 353, 262, 355, lineWidth=1.2),
+    Line(262, 355, 260, 354, lineWidth=1.2),
+    Line(265.5, 353, 268, 355, lineWidth=1.2),
+    Line(268, 355, 269, 357, lineWidth=1.2),
+    Circle(269, 357, 0.5),
+    Circle(260, 354, 0.5),
+    Line(265, 353, 263, 359, lineWidth=1.5),
+    Line(263, 359, 264, 361, lineWidth=1.5),
+    Line(265, 353, 266, 358, lineWidth=1.5),
+    Line(266, 358, 268, 361, lineWidth=1.5),
+    
+    Circle(110, 365, 1.8),
+    Line(109.5, 367, 106, 370, lineWidth=1.2),
+    Line(110.5, 367, 114, 370, lineWidth=1.2),
+    Circle(106, 370, 0.5),
+    Circle(114, 370, 0.5),
+    Line(110, 367, 108, 375, lineWidth=1.5),
+    Line(110, 367, 112, 375, lineWidth=1.5),
+    )
 
 ###Car Group 2
-CgTwo1_1 = Rect(233, 313, 6, 5, fill='limegreen')
-CgTwo1_2 = Rect(216, 310, 20, 8, fill='limegreen')
-CgTwo1_3 = Oval(234, 314, 16, 8, fill='limegreen')
-CgTwo1_4 = Circle(240, 316, 2, fill='limegreen')
-CgTwo1_5 = Oval(216, 314, 6, 8, fill='limegreen')
-CgTwo1_6 = Polygon(236, 311, 231, 304, 223, 304, 217, 311, fill='limegreen')
-CgTwo1_7 = Polygon(233, 311, 230, 306, 228, 306, 228, 311)
-CgTwo1_8 = Polygon(226, 311, 226, 306, 224, 306, 221, 311)
-CgTwo1_9 = Circle(235, 318, 3)
-CgTwo1_10 = Circle(220, 318, 3)
-
-CgTwo2_1 = Rect(283, 331, 6, 5, fill='teal')
-CgTwo2_2 = Rect(266, 328, 20, 8, fill='teal')
-CgTwo2_3 = Oval(284, 332, 16, 8, fill='teal')
-CgTwo2_4 = Circle(290, 334, 2, fill='teal')
-CgTwo2_5 = Oval(266, 332, 6, 8, fill='teal')
-CgTwo2_6 = Polygon(286, 329, 281, 322, 273, 322, 267, 329, fill='teal')
-CgTwo2_7 = Polygon(283, 329, 280, 324, 278, 324, 278, 329)
-CgTwo2_8 = Polygon(276, 329, 276, 324, 274, 324, 271, 329)
-CgTwo2_9 = Circle(285, 336, 3)
-CgTwo2_10 = Circle(270, 336, 3)
-
-CgTwo3_1 = Rect(135, 246, 6, 5, fill='gold')
-CgTwo3_2 = Rect(138, 243, 20, 8, fill='gold')
-CgTwo3_3 = Oval(140, 247, 16, 8, fill='gold')
-CgTwo3_4 = Circle(134, 249, 2, fill='gold')
-CgTwo3_5 = Oval(158, 247, 6, 8, fill='gold')
-CgTwo3_6 = Polygon(138, 244, 143, 237, 152, 237, 157, 244, fill='gold')
-CgTwo3_7 = Polygon(141, 244, 144, 239, 146, 239, 146, 244)
-CgTwo3_8 = Polygon(148, 244, 148, 239, 150, 239, 153, 244)
-CgTwo3_9 = Circle(139, 251, 3)
-CgTwo3_10 = Circle(154, 251, 3)
-
-CgTwo4_1 = Rect(175, 264, 6, 5, fill='mistyrose')
-CgTwo4_2 = Rect(178, 261, 20, 8, fill='mistyrose')
-CgTwo4_3 = Oval(180, 265, 16, 8, fill='mistyrose')
-CgTwo4_4 = Circle(174, 267, 2, fill='mistyrose')
-CgTwo4_5 = Oval(198, 265, 6, 8, fill='mistyrose')
-CgTwo4_6 = Polygon(178, 262, 183, 255, 192, 255, 197, 262, fill='mistyrose')
-CgTwo4_7 = Polygon(181, 262, 184, 257, 186, 257, 186, 262)
-CgTwo4_8 = Polygon(188, 262, 188, 257, 190, 257, 193, 262)
-CgTwo4_9 = Circle(179, 269, 3)
-CgTwo4_10 = Circle(194, 269, 3)
-
-CgTwo5_1 = Rect(67, 264, 6, 5, fill='coral')
-CgTwo5_2 = Rect(70, 261, 20, 8, fill='coral')
-CgTwo5_3 = Oval(74, 265, 16, 8, fill='coral')
-CgTwo5_4 = Circle(68, 267, 2, fill='coral')
-CgTwo5_5 = Oval(94, 262, 6, 12, fill='coral')
-CgTwo5_6 = Oval(86, 256, 18, 4, fill='coral')
-CgTwo5_7 = Polygon(69, 264, 77, 256, 85, 256, 94, 256, 94, 269, fill='coral')
-CgTwo5_8 = Polygon(75, 262, 80, 257, 82, 257, 82, 262)
-CgTwo5_9 = Polygon(84, 262, 84, 257, 88, 257, 88, 262)
-CgTwo5_10 = Polygon(90, 262, 90, 257, 92, 257, 92, 257, 94, 259, 94, 262)
-CgTwo5_11 = Circle(92, 260, 2)
-CgTwo5_12 = Circle(72, 269, 3)
-CgTwo5_13 = Circle(90, 269, 3)
-
-CgTwo6_1 = Rect(83, 297, 6, 5, fill=rgb(75, 75, 75))
-CgTwo6_2 = Rect(66, 294, 20, 8, fill=rgb(75, 75, 75))
-CgTwo6_3 = Oval(84, 298, 16, 8, fill=rgb(75, 75, 75))
-CgTwo6_4 = Circle(90, 300, 2, fill=rgb(75, 75, 75))
-CgTwo6_5 = Oval(66, 295, 6, 12, fill=rgb(75, 75, 75))
-CgTwo6_6 = Oval(74, 289, 18, 4, fill=rgb(75, 75, 75))
-CgTwo6_7 = Polygon(91, 297, 83, 289, 75, 289, 66, 289, 66, 302, fill=rgb(75, 75, 75))
-CgTwo6_8 = Polygon(85, 295, 80, 290, 78, 290, 78, 295)
-CgTwo6_9 = Polygon(76, 295, 76, 290, 72, 290, 72, 295)
-CgTwo6_10 = Polygon(70, 295, 70, 290, 68, 290, 68, 290, 66, 292, 66, 295)
-CgTwo6_11 = Circle(68, 293, 2)
-CgTwo6_12 = Circle(85, 302, 3)
-CgTwo6_13 = Circle(70, 302, 3)
-
-CgTwo7_1 = Polygon(275, 285, 275, 278, 284, 278, 284, 269, 295, 269, 295, 285, fill='firebrick', border='darkred')
-CgTwo7_2 = Polygon(294, 285, 294, 269, 300, 263, 307, 263, 307, 285, fill='firebrick', border='darkred')
-CgTwo7_3 = Rect(310, 263, 65, 22, fill='firebrick', border='darkred')
-CgTwo7_4 = Circle(282, 286, 3.3)
-CgTwo7_5 = Circle(313, 286, 3.3)
-CgTwo7_6 = Circle(321, 286, 3.3)
-CgTwo7_7 = Circle(363, 286, 3.3)
-CgTwo7_8 = Circle(371, 286, 3.3)
-CgTwo7_9 = Rect(307, 280, 3, 5, fill='darkred')
-CgTwo7_10 = Rect(287, 272, 5, 5)
-
-CgTwo8_1 = Polygon(125, 335, 125, 328, 116, 328, 116, 319, 105, 319, 105, 335, fill='orangered', border='crimson')
-CgTwo8_2 = Polygon(105, 335, 105, 319, 99, 313, 92, 313, 92, 335, fill='orangered', border='crimson')
-CgTwo8_3 = Rect(25, 313, 65, 22, fill='orangered', border='crimson')
-CgTwo8_4 = Circle(118, 336, 3.3)
-CgTwo8_5 = Circle(87, 336, 3.3)
-CgTwo8_6 = Circle(79, 336, 3.3)
-CgTwo8_7 = Circle(37, 336, 3.3)
-CgTwo8_8 = Circle(29, 336, 3.3)
-CgTwo8_9 = Rect(89, 330, 3, 5, fill='crimson')
-CgTwo8_10 = Rect(108, 322, 5, 5)
+CG2 = Group(
+    Rect(233, 313, 6, 5, fill='limegreen'),
+    Rect(216, 310, 20, 8, fill='limegreen'),
+    Oval(234, 314, 16, 8, fill='limegreen'),
+    Circle(240, 316, 2, fill='limegreen'),
+    Oval(216, 314, 6, 8, fill='limegreen'),
+    Polygon(236, 311, 231, 304, 223, 304, 217, 311, fill='limegreen'),
+    Polygon(233, 311, 230, 306, 228, 306, 228, 311),
+    Polygon(226, 311, 226, 306, 224, 306, 221, 311),
+    Circle(235, 318, 3),
+    Circle(220, 318, 3),
+    
+    Rect(283, 331, 6, 5, fill='teal'),
+    Rect(266, 328, 20, 8, fill='teal'),
+    Oval(284, 332, 16, 8, fill='teal'),
+    Circle(290, 334, 2, fill='teal'),
+    Oval(266, 332, 6, 8, fill='teal'),
+    Polygon(286, 329, 281, 322, 273, 322, 267, 329, fill='teal'),
+    Polygon(283, 329, 280, 324, 278, 324, 278, 329),
+    Polygon(276, 329, 276, 324, 274, 324, 271, 329),
+    Circle(285, 336, 3),
+    Circle(270, 336, 3),
+    
+    Rect(135, 246, 6, 5, fill='gold'),
+    Rect(138, 243, 20, 8, fill='gold'),
+    Oval(140, 247, 16, 8, fill='gold'),
+    Circle(134, 249, 2, fill='gold'),
+    Oval(158, 247, 6, 8, fill='gold'),
+    Polygon(138, 244, 143, 237, 152, 237, 157, 244, fill='gold'),
+    Polygon(141, 244, 144, 239, 146, 239, 146, 244),
+    Polygon(148, 244, 148, 239, 150, 239, 153, 244),
+    Circle(139, 251, 3),
+    Circle(154, 251, 3),
+    
+    Rect(175, 264, 6, 5, fill='mistyrose'),
+    Rect(178, 261, 20, 8, fill='mistyrose'),
+    Oval(180, 265, 16, 8, fill='mistyrose'),
+    Circle(174, 267, 2, fill='mistyrose'),
+    Oval(198, 265, 6, 8, fill='mistyrose'),
+    Polygon(178, 262, 183, 255, 192, 255, 197, 262, fill='mistyrose'),
+    Polygon(181, 262, 184, 257, 186, 257, 186, 262),
+    Polygon(188, 262, 188, 257, 190, 257, 193, 262),
+    Circle(179, 269, 3),
+    Circle(194, 269, 3),
+    
+    Rect(67, 264, 6, 5, fill='coral'),
+    Rect(70, 261, 20, 8, fill='coral'),
+    Oval(74, 265, 16, 8, fill='coral'),
+    Circle(68, 267, 2, fill='coral'),
+    Oval(94, 262, 6, 12, fill='coral'),
+    Oval(86, 256, 18, 4, fill='coral'),
+    Polygon(69, 264, 77, 256, 85, 256, 94, 256, 94, 269, fill='coral'),
+    Polygon(75, 262, 80, 257, 82, 257, 82, 262),
+    Polygon(84, 262, 84, 257, 88, 257, 88, 262),
+    Polygon(90, 262, 90, 257, 92, 257, 92, 257, 94, 259, 94, 262),
+    Circle(92, 260, 2),
+    Circle(72, 269, 3),
+    Circle(90, 269, 3),
+    
+    Rect(83, 297, 6, 5, fill=rgb(75, 75, 75)),
+    Rect(66, 294, 20, 8, fill=rgb(75, 75, 75)),
+    Oval(84, 298, 16, 8, fill=rgb(75, 75, 75)),
+    Circle(90, 300, 2, fill=rgb(75, 75, 75)),
+    Oval(66, 295, 6, 12, fill=rgb(75, 75, 75)),
+    Oval(74, 289, 18, 4, fill=rgb(75, 75, 75)),
+    Polygon(91, 297, 83, 289, 75, 289, 66, 289, 66, 302, fill=rgb(75, 75, 75)),
+    Polygon(85, 295, 80, 290, 78, 290, 78, 295),
+    Polygon(76, 295, 76, 290, 72, 290, 72, 295),
+    Polygon(70, 295, 70, 290, 68, 290, 68, 290, 66, 292, 66, 295),
+    Circle(68, 293, 2),
+    Circle(85, 302, 3),
+    Circle(70, 302, 3),
+    
+    Polygon(275, 285, 275, 278, 284, 278, 284, 269, 295, 269, 295, 285, fill='firebrick', border='darkred'),
+    Polygon(294, 285, 294, 269, 300, 263, 307, 263, 307, 285, fill='firebrick', border='darkred'),
+    Rect(310, 263, 65, 22, fill='firebrick', border='darkred'),
+    Circle(282, 286, 3.3),
+    Circle(313, 286, 3.3),
+    Circle(321, 286, 3.3),
+    Circle(363, 286, 3.3),
+    Circle(371, 286, 3.3),
+    Rect(307, 280, 3, 5, fill='darkred'),
+    Rect(287, 272, 5, 5),
+    
+    Polygon(125, 335, 125, 328, 116, 328, 116, 319, 105, 319, 105, 335, fill='orangered', border='crimson'),
+    Polygon(105, 335, 105, 319, 99, 313, 92, 313, 92, 335, fill='orangered', border='crimson'),
+    Rect(25, 313, 65, 22, fill='orangered', border='crimson'),
+    Circle(118, 336, 3.3),
+    Circle(87, 336, 3.3),
+    Circle(79, 336, 3.3),
+    Circle(37, 336, 3.3),
+    Circle(29, 336, 3.3),
+    Rect(89, 330, 3, 5, fill='crimson'),
+    Rect(108, 322, 5, 5),
+    )
+    
 
 ###People Group 3
-PgThree1_1 = Circle(100, 365, 1.8)
-PgThree1_2 = Line(99.5, 367, 96, 370, lineWidth=1.2)
-PgThree1_3 = Line(100.5, 367, 104, 370, lineWidth=1.2)
-PgThree1_4 = Circle(96, 370, 0.5)
-PgThree1_5 = Circle(104, 370, 0.5)
-PgThree1_6 = Line(100, 367, 98, 375, lineWidth=1.5)
-PgThree1_7 = Line(100, 367, 102, 375, lineWidth=1.5)
+PG3 = Group(
+    Circle(100, 365, 1.8),
+    Line(99.5, 367, 96, 370, lineWidth=1.2),
+    Line(100.5, 367, 104, 370, lineWidth=1.2),
+    Circle(96, 370, 0.5),
+    Circle(104, 370, 0.5),
+    Line(100, 367, 98, 375, lineWidth=1.5),
+    Line(100, 367, 102, 375, lineWidth=1.5),
 
-PgThree2_1 = Circle(115, 365, 1.8)
-PgThree2_2 = Line(114.5, 367, 111, 370, lineWidth=1.2)
-PgThree2_3 = Line(115.5, 367, 119, 370, lineWidth=1.2)
-PgThree2_4 = Circle(111, 370, 0.5)
-PgThree2_5 = Circle(119, 370, 0.5)
-PgThree2_6 = Line(115, 367, 113, 375, lineWidth=1.5)
-PgThree2_7 = Line(115, 367, 117, 375, lineWidth=1.5)
+    Circle(115, 365, 1.8),
+    Line(114.5, 367, 111, 370, lineWidth=1.2),
+    Line(115.5, 367, 119, 370, lineWidth=1.2),
+    Circle(111, 370, 0.5),
+    Circle(119, 370, 0.5),
+    Line(115, 367, 113, 375, lineWidth=1.5),
+    Line(115, 367, 117, 375, lineWidth=1.5),
 
-PgThree3_1 = Circle(185, 365, 1.8)
-PgThree3_2 = Line(184.5, 367, 181, 370, lineWidth=1.2)
-PgThree3_3 = Line(185.5, 367, 189, 370, lineWidth=1.2)
-PgThree3_4 = Circle(181, 370, 0.5)
-PgThree3_5 = Circle(189, 370, 0.5)
-PgThree3_6 = Line(185, 367, 183, 375, lineWidth=1.5)
-PgThree3_7 = Line(185, 367, 187, 375, lineWidth=1.5)
+    Circle(185, 365, 1.8),
+    Line(184.5, 367, 181, 370, lineWidth=1.2),
+    Line(185.5, 367, 189, 370, lineWidth=1.2),
+    Circle(181, 370, 0.5),
+    Circle(189, 370, 0.5),
+    Line(185, 367, 183, 375, lineWidth=1.5),
+    Line(185, 367, 187, 375, lineWidth=1.5),
 
-PgThree4_1 = Circle(35, 340, 1.8)
-PgThree4_2 = Line(34.5, 342, 32, 344, lineWidth=1.2)
-PgThree4_3 = Line(32, 344, 30, 343, lineWidth=1.2)
-PgThree4_4 = Line(35.5, 342, 38, 344, lineWidth=1.2)
-PgThree4_5 = Line(38, 344, 39, 346, lineWidth=1.2)
-PgThree4_6 = Circle(39, 346, 0.5)
-PgThree4_7 = Circle(30, 343, 0.5)
-PgThree4_8 = Line(35, 342, 33, 348, lineWidth=1.5)
-PgThree4_9 = Line(33, 348, 34, 350, lineWidth=1.5)
-PgThree4_10 = Line(35, 342, 36, 347, lineWidth=1.5)
-PgThree4_11 = Line(36, 347, 38, 350, lineWidth=1.5)
-
-PgThree5_1 = Circle(315, 363, 1.8)
-PgThree5_2 = Line(315, 365, 318, 367, lineWidth=1.2)
-PgThree5_3 = Line(318, 367, 320, 366, lineWidth=1.2)
-PgThree5_4 = Line(314.5, 365, 312, 367, lineWidth=1.2)
-PgThree5_5 = Line(312, 367, 311, 369, lineWidth=1.2)
-PgThree5_6 = Circle(311, 369, 0.5)
-PgThree5_7 = Circle(320, 366, 0.5)
-PgThree5_8 = Line(315, 365, 317, 371, lineWidth=1.5)
-PgThree5_9 = Line(317, 371, 316, 373, lineWidth=1.5)
-PgThree5_10 = Line(315, 365, 314, 370, lineWidth=1.5)
-PgThree5_11 = Line(314, 370, 312, 373, lineWidth=1.5)
-
-PgThree6_1 = Circle(215, 343, 1.8)
-PgThree6_2 = Line(215, 345, 218, 347, lineWidth=1.2)
-PgThree6_3 = Line(218, 347, 220, 346, lineWidth=1.2)
-PgThree6_4 = Line(214.5, 345, 212, 347, lineWidth=1.2)
-PgThree6_5 = Line(212, 347, 211, 349, lineWidth=1.2)
-PgThree6_6 = Circle(211, 349, 0.5)
-PgThree6_7 = Circle(220, 346, 0.5)
-PgThree6_8 = Line(215, 345, 217, 351, lineWidth=1.5)
-PgThree6_9 = Line(217, 351, 216, 353, lineWidth=1.5)
-PgThree6_10 = Line(215, 345, 214, 350, lineWidth=1.5)
-PgThree6_11 = Line(214, 350, 212, 353, lineWidth=1.5)
+    Circle(35, 340, 1.8),
+    Line(34.5, 342, 32, 344, lineWidth=1.2),
+    Line(32, 344, 30, 343, lineWidth=1.2),
+    Line(35.5, 342, 38, 344, lineWidth=1.2),
+    Line(38, 344, 39, 346, lineWidth=1.2),
+    Circle(39, 346, 0.5),
+    Circle(30, 343, 0.5),
+    Line(35, 342, 33, 348, lineWidth=1.5),
+    Line(33, 348, 34, 350, lineWidth=1.5),
+    Line(35, 342, 36, 347, lineWidth=1.5),
+    Line(36, 347, 38, 350, lineWidth=1.5),
+    
+    Circle(315, 363, 1.8),
+    Line(315, 365, 318, 367, lineWidth=1.2),
+    Line(318, 367, 320, 366, lineWidth=1.2),
+    Line(314.5, 365, 312, 367, lineWidth=1.2),
+    Line(312, 367, 311, 369, lineWidth=1.2),
+    Circle(311, 369, 0.5),
+    Circle(320, 366, 0.5),
+    Line(315, 365, 317, 371, lineWidth=1.5),
+    Line(317, 371, 316, 373, lineWidth=1.5),
+    Line(315, 365, 314, 370, lineWidth=1.5),
+    Line(314, 370, 312, 373, lineWidth=1.5),
+    
+    Circle(215, 343, 1.8),
+    Line(215, 345, 218, 347, lineWidth=1.2),
+    Line(218, 347, 220, 346, lineWidth=1.2),
+    Line(214.5, 345, 212, 347, lineWidth=1.2),
+    Line(212, 347, 211, 349, lineWidth=1.2),
+    Circle(211, 349, 0.5),
+    Circle(220, 346, 0.5),
+    Line(215, 345, 217, 351, lineWidth=1.5),
+    Line(217, 351, 216, 353, lineWidth=1.5),
+    Line(215, 345, 214, 350, lineWidth=1.5),
+    Line(214, 350, 212, 353, lineWidth=1.5)
+    )
 
 ###Car Group 3
-CgThree1_1 = Polygon(25, 252, 25, 245, 34, 245, 34, 236, 45, 236, 45, 252, fill='royalblue', border='blue')
-CgThree1_2 = Polygon(44, 252, 44, 236, 50, 230, 57, 230, 57, 252, fill='royalblue', border='blue')
-CgThree1_3 = Rect(60, 230, 65, 22, fill='royalblue', border='blue')
-CgThree1_4 = Circle(32, 253, 3.3)
-CgThree1_5 = Circle(63, 253, 3.3)
-CgThree1_6 = Circle(71, 253, 3.3)
-CgThree1_7 = Circle(113, 253, 3.3)
-CgThree1_8 = Circle(121, 253, 3.3)
-CgThree1_9 = Rect(57, 247, 3, 5, fill='blue')
-CgThree1_10 = Rect(37, 239, 5, 5)
-
-CgThree2_1 = Rect(185, 246, 6, 5, fill='hotpink')
-CgThree2_2 = Rect(188, 243, 20, 8, fill='hotpink')
-CgThree2_3 = Oval(190, 247, 16, 8, fill='hotpink')
-CgThree2_4 = Circle(184, 249, 2, fill='hotpink')
-CgThree2_5 = Oval(208, 247, 6, 8, fill='hotpink')
-CgThree2_6 = Polygon(188, 244, 193, 237, 202, 237, 207, 244, fill='hotpink')
-CgThree2_7 = Polygon(191, 244, 194, 239, 196, 239, 196, 244)
-CgThree2_8 = Polygon(198, 244, 198, 239, 200, 239, 203, 244)
-CgThree2_9 = Circle(189, 251, 3)
-CgThree2_10 = Circle(204, 251, 3)
-
-CgThree3_1 = Rect(117, 264, 6, 5, fill='green')
-CgThree3_2 = Rect(120, 261, 20, 8, fill='green')
-CgThree3_3 = Oval(124, 265, 16, 8, fill='green')
-CgThree3_4 = Circle(118, 267, 2, fill='green')
-CgThree3_5 = Oval(144, 262, 6, 12, fill='green')
-CgThree3_6 = Oval(136, 256, 18, 4, fill='green')
-CgThree3_7 = Polygon(119, 264, 127, 256, 135, 256, 144, 256, 144, 269, fill='green')
-CgThree3_8 = Polygon(125, 262, 130, 257, 132, 257, 132, 262)
-CgThree3_9 = Polygon(134, 262, 134, 257, 138, 257, 138, 262)
-CgThree3_10 = Polygon(140, 262, 140, 257, 142, 257, 142, 257, 144, 259, 144, 262)
-CgThree3_11 = Circle(142, 260, 2)
-CgThree3_12 = Circle(122, 269, 3)
-CgThree3_13 = Circle(140, 269, 3)
-
-CgThree4_1 = Rect(275, 264, 6, 5, fill='brown')
-CgThree4_2 = Rect(278, 261, 20, 8, fill='brown')
-CgThree4_3 = Oval(280, 265, 16, 8, fill='brown')
-CgThree4_4 = Circle(274, 267, 2, fill='brown')
-CgThree4_5 = Oval(298, 265, 6, 8, fill='brown')
-CgThree4_6 = Polygon(278, 262, 283, 255, 292, 255, 297, 262, fill='brown')
-CgThree4_7 = Polygon(281, 262, 284, 257, 286, 257, 286, 262)
-CgThree4_8 = Polygon(288, 262, 288, 257, 290, 257, 293, 262)
-CgThree4_9 = Circle(279, 269, 3)
-CgThree4_10 = Circle(294, 269, 3)
-
-CgThree5_1 = Rect(25, 280, 6, 5, fill='blueviolet')
-CgThree5_2 = Rect(28, 277, 20, 8, fill='blueviolet')
-CgThree5_3 = Oval(30, 281, 16, 8, fill='blueviolet')
-CgThree5_4 = Circle(24, 283, 2, fill='blueviolet')
-CgThree5_5 = Oval(48, 281, 6, 8, fill='blueviolet')
-CgThree5_6 = Polygon(28, 278, 33, 271, 42, 271, 47, 278, fill='blueviolet')
-CgThree5_7 = Polygon(31, 278, 34, 273, 36, 273, 36, 278)
-CgThree5_8 = Polygon(38, 278, 38, 273, 40, 273, 43, 278)
-CgThree5_9 = Circle(29, 285, 3)
-CgThree5_10 = Circle(44, 285, 3)
-
-CgThree6_1 = Rect(225, 280, 6, 5, fill='moccasin')
-CgThree6_2 = Rect(228, 277, 20, 8, fill='moccasin')
-CgThree6_3 = Oval(230, 281, 16, 8, fill='moccasin')
-CgThree6_4 = Circle(224, 283, 2, fill='moccasin')
-CgThree6_5 = Oval(248, 281, 6, 8, fill='moccasin')
-CgThree6_6 = Polygon(228, 278, 233, 271, 242, 271, 247, 278, fill='moccasin')
-CgThree6_7 = Polygon(231, 278, 234, 273, 236, 273, 236, 278)
-CgThree6_8 = Polygon(238, 278, 238, 273, 240, 273, 243, 278)
-CgThree6_9 = Circle(229, 285, 3)
-CgThree6_10 = Circle(244, 285, 3)
-
-CgThree7_1 = Polygon(275, 285, 275, 278, 284, 278, 284, 269, 295, 269, 295, 285, fill='wheat', border='tan')
-CgThree7_2 = Polygon(294, 285, 294, 269, 300, 263, 307, 263, 307, 285, fill='wheat', border='tan')
-CgThree7_3 = Rect(310, 263, 65, 22, fill='wheat', border='tan')
-CgThree7_4 = Circle(282, 286, 3.3)
-CgThree7_5 = Circle(313, 286, 3.3)
-CgThree7_6 = Circle(321, 286, 3.3)
-CgThree7_7 = Circle(363, 286, 3.3)
-CgThree7_8 = Circle(371, 286, 3.3)
-CgThree7_9 = Rect(307, 280, 3, 5, fill='tan')
-CgThree7_10 = Rect(287, 272, 5, 5)
-
-CgThree8_1 = Rect(83, 297, 6, 5, fill='lightsalmon')
-CgThree8_2 = Rect(66, 294, 20, 8, fill='lightsalmon')
-CgThree8_3 = Oval(84, 298, 16, 8, fill='lightsalmon')
-CgThree8_4 = Circle(90, 300, 2, fill='lightsalmon')
-CgThree8_5 = Oval(66, 295, 6, 12, fill='lightsalmon')
-CgThree8_6 = Oval(74, 289, 18, 4, fill='lightsalmon')
-CgThree8_7 = Polygon(91, 297, 83, 289, 75, 289, 66, 289, 66, 302, fill='lightsalmon')
-CgThree8_8 = Polygon(85, 295, 80, 290, 78, 290, 78, 295)
-CgThree8_9 = Polygon(76, 295, 76, 290, 72, 290, 72, 295)
-CgThree8_10 = Polygon(70, 295, 70, 290, 68, 290, 68, 290, 66, 292, 66, 295)
-CgThree8_11 = Circle(68, 293, 2)
-CgThree8_12 = Circle(85, 302, 3)
-CgThree8_13 = Circle(70, 302, 3)
-
-CgThree9_1 = Rect(283, 297, 6, 5, fill='saddlebrown')
-CgThree9_2 = Rect(266, 294, 20, 8, fill='saddlebrown')
-CgThree9_3 = Oval(284, 298, 16, 8, fill=r'saddlebrown')
-CgThree9_4 = Circle(290, 300, 2, fill='saddlebrown')
-CgThree9_5 = Oval(266, 295, 6, 12, fill='saddlebrown')
-CgThree9_6 = Oval(274, 289, 18, 4, fill='saddlebrown')
-CgThree9_7 = Polygon(291, 297, 283, 289, 275, 289, 266, 289, 266, 302, fill='saddlebrown')
-CgThree9_8 = Polygon(285, 295, 280, 290, 278, 290, 278, 295)
-CgThree9_9 = Polygon(276, 295, 276, 290, 272, 290, 272, 295)
-CgThree9_10 = Polygon(270, 295, 270, 290, 268, 290, 268, 290, 266, 292, 266, 295)
-CgThree9_11 = Circle(268, 293, 2)
-CgThree9_12 = Circle(285, 302, 3)
-CgThree9_13 = Circle(270, 302, 3)
-
-CgThree10_1 = Rect(33, 314, 6, 5, fill='whitesmoke')
-CgThree10_2 = Rect(16, 311, 20, 8, fill='whitesmoke')
-CgThree10_3 = Oval(34, 315, 16, 8, fill='whitesmoke')
-CgThree10_4 = Circle(40, 317, 2, fill='whitesmoke')
-CgThree10_5 = Oval(16, 312, 6, 12, fill='whitesmoke')
-CgThree10_6 = Oval(24, 306, 18, 4, fill='whitesmoke')
-CgThree10_7 = Polygon(41, 314, 33, 306, 25, 306, 16, 306, 16, 319, fill='whitesmoke')
-CgThree10_8 = Polygon(35, 312, 30, 307, 28, 307, 28, 312)
-CgThree10_9 = Polygon(26, 312, 26, 307, 22, 307, 22, 312)
-CgThree10_10 = Polygon(20, 312, 20, 307, 18, 307, 18, 307, 16, 309, 16, 312)
-CgThree10_11 = Circle(18, 310, 2)
-CgThree10_12 = Circle(35, 319, 3)
-CgThree10_13 = Circle(20, 319, 3)
-
-CgThree11_1 = Polygon(125, 335, 125, 328, 116, 328, 116, 319, 105, 319, 105, 335, fill='turquoise', border='blue')
-CgThree11_2 = Polygon(105, 335, 105, 319, 99, 313, 92, 313, 92, 335, fill='turquoise', border='blue')
-CgThree11_3 = Rect(25, 313, 65, 22, fill='turquoise', border='blue')
-CgThree11_4 = Circle(118, 336, 3.3)
-CgThree11_5 = Circle(87, 336, 3.3)
-CgThree11_6 = Circle(79, 336, 3.3)
-CgThree11_7 = Circle(37, 336, 3.3)
-CgThree11_8 = Circle(29, 336, 3.3)
-CgThree11_9 = Rect(89, 330, 3, 5, fill='blue')
-CgThree11_10 = Rect(108, 322, 5, 5)
-
-CgThree12_1 = Polygon(325, 335, 325, 328, 316, 328, 316, 319, 305, 319, 305, 335, fill='darkOrchid', border='purple')
-CgThree12_2 = Polygon(305, 335, 305, 319, 299, 313, 292, 313, 292, 335, fill='darkOrchid', border='purple')
-CgThree12_3 = Rect(225, 313, 65, 22, fill='darkOrchid', border='purple')
-CgThree12_4 = Circle(318, 336, 3.3)
-CgThree12_5 = Circle(287, 336, 3.3)
-CgThree12_6 = Circle(279, 336, 3.3)
-CgThree12_7 = Circle(237, 336, 3.3)
-CgThree12_8 = Circle(229, 336, 3.3)
-CgThree12_9 = Rect(289, 330, 3, 5, fill='purple')
-CgThree12_10 = Rect(308, 322, 5, 5)
-
-CgThree13_1 = Rect(383, 331, 6, 5, fill='darkkhaki')
-CgThree13_2 = Rect(366, 328, 20, 8, fill='darkkhaki')
-CgThree13_3 = Oval(384, 332, 16, 8, fill='darkkhaki')
-CgThree13_4 = Circle(390, 334, 2, fill='darkkhaki')
-CgThree13_5 = Oval(366, 332, 6, 8, fill='darkkhaki')
-CgThree13_6 = Polygon(386, 329, 381, 322, 373, 322, 367, 329, fill='darkkhaki')
-CgThree13_7 = Polygon(383, 329, 380, 324, 378, 324, 378, 329)
-CgThree13_8 = Polygon(376, 329, 376, 324, 374, 324, 371, 329)
-CgThree13_9 = Circle(385, 336, 3)
-CgThree13_10 = Circle(370, 336, 3)
-
+CG3 = Group(
+    Polygon(25, 252, 25, 245, 34, 245, 34, 236, 45, 236, 45, 252, fill='royalblue', border='blue'),
+    Polygon(44, 252, 44, 236, 50, 230, 57, 230, 57, 252, fill='royalblue', border='blue'),
+    Rect(60, 230, 65, 22, fill='royalblue', border='blue'),
+    Circle(32, 253, 3.3),
+    Circle(63, 253, 3.3),
+    Circle(71, 253, 3.3),
+    Circle(113, 253, 3.3),
+    Circle(121, 253, 3.3),
+    Rect(57, 247, 3, 5, fill='blue'),
+    Rect(37, 239, 5, 5),
+    
+    Rect(185, 246, 6, 5, fill='hotpink'),
+    Rect(188, 243, 20, 8, fill='hotpink'),
+    Oval(190, 247, 16, 8, fill='hotpink'),
+    Circle(184, 249, 2, fill='hotpink'),
+    Oval(208, 247, 6, 8, fill='hotpink'),
+    Polygon(188, 244, 193, 237, 202, 237, 207, 244, fill='hotpink'),
+    Polygon(191, 244, 194, 239, 196, 239, 196, 244),
+    Polygon(198, 244, 198, 239, 200, 239, 203, 244),
+    Circle(189, 251, 3),
+    Circle(204, 251, 3),
+    
+    Rect(117, 264, 6, 5, fill='green'),
+    Rect(120, 261, 20, 8, fill='green'),
+    Oval(124, 265, 16, 8, fill='green'),
+    Circle(118, 267, 2, fill='green'),
+    Oval(144, 262, 6, 12, fill='green'),
+    Oval(136, 256, 18, 4, fill='green'),
+    Polygon(119, 264, 127, 256, 135, 256, 144, 256, 144, 269, fill='green'),
+    Polygon(125, 262, 130, 257, 132, 257, 132, 262),
+    Polygon(134, 262, 134, 257, 138, 257, 138, 262),
+    Polygon(140, 262, 140, 257, 142, 257, 142, 257, 144, 259, 144, 262),
+    Circle(142, 260, 2),
+    Circle(122, 269, 3),
+    Circle(140, 269, 3),
+    
+    Rect(275, 264, 6, 5, fill='brown'),
+    Rect(278, 261, 20, 8, fill='brown'),
+    Oval(280, 265, 16, 8, fill='brown'),
+    Circle(274, 267, 2, fill='brown'),
+    Oval(298, 265, 6, 8, fill='brown'),
+    Polygon(278, 262, 283, 255, 292, 255, 297, 262, fill='brown'),
+    Polygon(281, 262, 284, 257, 286, 257, 286, 262),
+    Polygon(288, 262, 288, 257, 290, 257, 293, 262),
+    Circle(279, 269, 3),
+    Circle(294, 269, 3),
+    
+    Rect(25, 280, 6, 5, fill='blueviolet'),
+    Rect(28, 277, 20, 8, fill='blueviolet'),
+    Oval(30, 281, 16, 8, fill='blueviolet'),
+    Circle(24, 283, 2, fill='blueviolet'),
+    Oval(48, 281, 6, 8, fill='blueviolet'),
+    Polygon(28, 278, 33, 271, 42, 271, 47, 278, fill='blueviolet'),
+    Polygon(31, 278, 34, 273, 36, 273, 36, 278),
+    Polygon(38, 278, 38, 273, 40, 273, 43, 278),
+    Circle(29, 285, 3),
+    Circle(44, 285, 3),
+    
+    Rect(225, 280, 6, 5, fill='moccasin'),
+    Rect(228, 277, 20, 8, fill='moccasin'),
+    Oval(230, 281, 16, 8, fill='moccasin'),
+    Circle(224, 283, 2, fill='moccasin'),
+    Oval(248, 281, 6, 8, fill='moccasin'),
+    Polygon(228, 278, 233, 271, 242, 271, 247, 278, fill='moccasin'),
+    Polygon(231, 278, 234, 273, 236, 273, 236, 278),
+    Polygon(238, 278, 238, 273, 240, 273, 243, 278),
+    Circle(229, 285, 3),
+    Circle(244, 285, 3),
+    
+    Polygon(275, 285, 275, 278, 284, 278, 284, 269, 295, 269, 295, 285, fill='wheat', border='tan'),
+    Polygon(294, 285, 294, 269, 300, 263, 307, 263, 307, 285, fill='wheat', border='tan'),
+    Rect(310, 263, 65, 22, fill='wheat', border='tan'),
+    Circle(282, 286, 3.3),
+    Circle(313, 286, 3.3),
+    Circle(321, 286, 3.3),
+    Circle(363, 286, 3.3),
+    Circle(371, 286, 3.3),
+    Rect(307, 280, 3, 5, fill='tan'),
+    Rect(287, 272, 5, 5),
+    
+    Rect(83, 297, 6, 5, fill='lightsalmon'),
+    Rect(66, 294, 20, 8, fill='lightsalmon'),
+    Oval(84, 298, 16, 8, fill='lightsalmon'),
+    Circle(90, 300, 2, fill='lightsalmon'),
+    Oval(66, 295, 6, 12, fill='lightsalmon'),
+    Oval(74, 289, 18, 4, fill='lightsalmon'),
+    Polygon(91, 297, 83, 289, 75, 289, 66, 289, 66, 302, fill='lightsalmon'),
+    Polygon(85, 295, 80, 290, 78, 290, 78, 295),
+    Polygon(76, 295, 76, 290, 72, 290, 72, 295),
+    Polygon(70, 295, 70, 290, 68, 290, 68, 290, 66, 292, 66, 295),
+    Circle(68, 293, 2),
+    Circle(85, 302, 3),
+    Circle(70, 302, 3),
+    
+    Rect(283, 297, 6, 5, fill='saddlebrown'),
+    Rect(266, 294, 20, 8, fill='saddlebrown'),
+    Oval(284, 298, 16, 8, fill=r'saddlebrown'),
+    Circle(290, 300, 2, fill='saddlebrown'),
+    Oval(266, 295, 6, 12, fill='saddlebrown'),
+    Oval(274, 289, 18, 4, fill='saddlebrown'),
+    Polygon(291, 297, 283, 289, 275, 289, 266, 289, 266, 302, fill='saddlebrown'),
+    Polygon(285, 295, 280, 290, 278, 290, 278, 295),
+    Polygon(276, 295, 276, 290, 272, 290, 272, 295),
+    Polygon(270, 295, 270, 290, 268, 290, 268, 290, 266, 292, 266, 295),
+    Circle(268, 293, 2),
+    Circle(285, 302, 3),
+    Circle(270, 302, 3),
+    
+    Rect(33, 314, 6, 5, fill='whitesmoke'),
+    Rect(16, 311, 20, 8, fill='whitesmoke'),
+    Oval(34, 315, 16, 8, fill='whitesmoke'),
+    Circle(40, 317, 2, fill='whitesmoke'),
+    Oval(16, 312, 6, 12, fill='whitesmoke'),
+    Oval(24, 306, 18, 4, fill='whitesmoke'),
+    Polygon(41, 314, 33, 306, 25, 306, 16, 306, 16, 319, fill='whitesmoke'),
+    Polygon(35, 312, 30, 307, 28, 307, 28, 312),
+    Polygon(26, 312, 26, 307, 22, 307, 22, 312),
+    Polygon(20, 312, 20, 307, 18, 307, 18, 307, 16, 309, 16, 312),
+    Circle(18, 310, 2),
+    Circle(35, 319, 3),
+    Circle(20, 319, 3),
+    
+    Polygon(125, 335, 125, 328, 116, 328, 116, 319, 105, 319, 105, 335, fill='turquoise', border='blue'),
+    Polygon(105, 335, 105, 319, 99, 313, 92, 313, 92, 335, fill='turquoise', border='blue'),
+    Rect(25, 313, 65, 22, fill='turquoise', border='blue'),
+    Circle(118, 336, 3.3),
+    Circle(87, 336, 3.3),
+    Circle(79, 336, 3.3),
+    Circle(37, 336, 3.3),
+    Circle(29, 336, 3.3),
+    Rect(89, 330, 3, 5, fill='blue'),
+    Rect(108, 322, 5, 5),
+    
+    Polygon(325, 335, 325, 328, 316, 328, 316, 319, 305, 319, 305, 335, fill='darkOrchid', border='purple'),
+    Polygon(305, 335, 305, 319, 299, 313, 292, 313, 292, 335, fill='darkOrchid', border='purple'),
+    Rect(225, 313, 65, 22, fill='darkOrchid', border='purple'),
+    Circle(318, 336, 3.3),
+    Circle(287, 336, 3.3),
+    Circle(279, 336, 3.3),
+    Circle(237, 336, 3.3),
+    Circle(229, 336, 3.3),
+    Rect(289, 330, 3, 5, fill='purple'),
+    Rect(308, 322, 5, 5),
+    
+    Rect(383, 331, 6, 5, fill='darkkhaki'),
+    Rect(366, 328, 20, 8, fill='darkkhaki'),
+    Oval(384, 332, 16, 8, fill='darkkhaki'),
+    Circle(390, 334, 2, fill='darkkhaki'),
+    Oval(366, 332, 6, 8, fill='darkkhaki'),
+    Polygon(386, 329, 381, 322, 373, 322, 367, 329, fill='darkkhaki'),
+    Polygon(383, 329, 380, 324, 378, 324, 378, 329),
+    Polygon(376, 329, 376, 324, 374, 324, 371, 329),
+    Circle(385, 336, 3),
+    Circle(370, 336, 3),
+    )
+    
 ###People Group 4
-PgFour1_1 = Circle(265, 351, 1.8)
-PgFour1_2 = Line(264.5, 353, 262, 355, lineWidth=1.2)
-PgFour1_3 = Line(262, 355, 260, 354, lineWidth=1.2)
-PgFour1_4 = Line(265.5, 353, 268, 355, lineWidth=1.2)
-PgFour1_5 = Line(268, 355, 269, 357, lineWidth=1.2)
-PgFour1_6 = Circle(269, 357, 0.5)
-PgFour1_7 = Circle(260, 354, 0.5)
-PgFour1_8 = Line(265, 353, 263, 359, lineWidth=1.5)
-PgFour1_9 = Line(263, 359, 264, 361, lineWidth=1.5)
-PgFour1_10 = Line(265, 353, 266, 358, lineWidth=1.5)
-PgFour1_11 = Line(266, 358, 268, 361, lineWidth=1.5)
-
-PgFour2_1 = Circle(115, 358, 1.8)
-PgFour2_2 = Line(115, 360, 118, 362, lineWidth=1.2)
-PgFour2_3 = Line(118, 362, 120, 361, lineWidth=1.2)
-PgFour2_4 = Line(114.5, 360, 112, 362, lineWidth=1.2)
-PgFour2_5 = Line(112, 362, 111, 364, lineWidth=1.2)
-PgFour2_6 = Circle(111, 364, 0.5)
-PgFour2_7 = Circle(120, 361, 0.5)
-PgFour2_8 = Line(115, 360, 117, 366, lineWidth=1.5)
-PgFour2_9 = Line(117, 366, 116, 368, lineWidth=1.5)
-PgFour2_10 = Line(115, 360, 114, 365, lineWidth=1.5)
-PgFour2_11 = Line(114, 365, 112, 368, lineWidth=1.5)
+PG4 = Group(
+    Circle(265, 351, 1.8),
+    Line(264.5, 353, 262, 355, lineWidth=1.2),
+    Line(262, 355, 260, 354, lineWidth=1.2),
+    Line(265.5, 353, 268, 355, lineWidth=1.2),
+    Line(268, 355, 269, 357, lineWidth=1.2),
+    Circle(269, 357, 0.5),
+    Circle(260, 354, 0.5),
+    Line(265, 353, 263, 359, lineWidth=1.5),
+    Line(263, 359, 264, 361, lineWidth=1.5),
+    Line(265, 353, 266, 358, lineWidth=1.5),
+    Line(266, 358, 268, 361, lineWidth=1.5),
+        
+    Circle(115, 358, 1.8),
+    Line(115, 360, 118, 362, lineWidth=1.2),
+    Line(118, 362, 120, 361, lineWidth=1.2),
+    Line(114.5, 360, 112, 362, lineWidth=1.2),
+    Line(112, 362, 111, 364, lineWidth=1.2),
+    Circle(111, 364, 0.5),
+    Circle(120, 361, 0.5),
+    Line(115, 360, 117, 366, lineWidth=1.5),
+    Line(117, 366, 116, 368, lineWidth=1.5),
+    Line(115, 360, 114, 365, lineWidth=1.5),
+    Line(114, 365, 112, 368, lineWidth=1.5),
+    )
 
 ###Car Group 4
-CgFour1_1 = Rect(93, 297, 6, 5, fill='mediumseagreen')
-CgFour1_2 = Rect(76, 294, 20, 8, fill='mediumseagreen')
-CgFour1_3 = Oval(94, 298, 16, 8, fill='mediumseagreen')
-CgFour1_4 = Circle(100, 300, 2, fill='mediumseagreen')
-CgFour1_5 = Oval(76, 295, 6, 12, fill='mediumseagreen')
-CgFour1_6 = Oval(84, 289, 18, 4, fill='mediumseagreen')
-CgFour1_7 = Polygon(101, 297, 93, 289, 85, 289, 76, 289, 76, 302, fill='mediumseagreen')
-CgFour1_8 = Polygon(95, 295, 90, 290, 88, 290, 88, 295)
-CgFour1_9 = Polygon(86, 295, 86, 290, 82, 290, 82, 295)
-CgFour1_10 = Polygon(80, 295, 80, 290, 78, 290, 78, 290, 76, 292, 76, 295)
-CgFour1_11 = Circle(78, 293, 2)
-CgFour1_12 = Circle(95, 302, 3)
-CgFour1_13 = Circle(80, 302, 3)
-
-CgFour2_1 = Rect(217, 281, 6, 5, fill='lightsalmon')
-CgFour2_2 = Rect(220, 278, 20, 8, fill='lightsalmon')
-CgFour2_3 = Oval(224, 282, 16, 8, fill='lightsalmon')
-CgFour2_4 = Circle(218, 284, 2, fill='lightsalmon')
-CgFour2_5 = Oval(244, 279, 6, 12, fill='lightsalmon')
-CgFour2_6 = Oval(236, 273, 18, 4, fill='lightsalmon')
-CgFour2_7 = Polygon(219, 281, 227, 273, 235, 273, 244, 273, 244, 286, fill='lightsalmon')
-CgFour2_8 = Polygon(225, 279, 230, 274, 232, 274, 232, 279)
-CgFour2_9 = Polygon(234, 279, 234, 274, 238, 274, 238, 279)
-CgFour2_10 = Polygon(240, 279, 240, 274, 242, 274, 242, 274, 244, 276, 244, 279)
-CgFour2_11 = Circle(242, 277, 2)
-CgFour2_12 = Circle(222, 286, 3)
-CgFour2_13 = Circle(240, 286, 3)
-
-CgFour3_1 = Rect(175, 264, 6, 5, fill='powderblue')
-CgFour3_2 = Rect(178, 261, 20, 8, fill='powderblue')
-CgFour3_3 = Oval(180, 265, 16, 8, fill='powderblue')
-CgFour3_4 = Circle(174, 267, 2, fill='powderblue')
-CgFour3_5 = Oval(198, 265, 6, 8, fill='powderblue')
-CgFour3_6 = Polygon(178, 262, 183, 255, 192, 255, 197, 262, fill='powderblue')
-CgFour3_7 = Polygon(181, 262, 184, 257, 186, 257, 186, 262)
-CgFour3_8 = Polygon(188, 262, 188, 257, 190, 257, 193, 262)
-CgFour3_9 = Circle(179, 269, 3)
-CgFour3_10 = Circle(194, 269, 3)
-
-CgFour4_1 = Rect(283, 331, 6, 5, fill='indigo')
-CgFour4_2 = Rect(266, 328, 20, 8, fill='indigo')
-CgFour4_3 = Oval(284, 332, 16, 8, fill='indigo')
-CgFour4_4 = Circle(290, 334, 2, fill='indigo')
-CgFour4_5 = Oval(266, 332, 6, 8, fill='indigo')
-CgFour4_6 = Polygon(286, 329, 281, 322, 273, 322, 267, 329, fill='indigo')
-CgFour4_7 = Polygon(283, 329, 280, 324, 278, 324, 278, 329)
-CgFour4_8 = Polygon(276, 329, 276, 324, 274, 324, 271, 329)
-CgFour4_9 = Circle(285, 336, 3)
-CgFour4_10 = Circle(270, 336, 3)
+CG4 = Group(
+    Rect(93, 297, 6, 5, fill='mediumseagreen'),
+    Rect(76, 294, 20, 8, fill='mediumseagreen'),
+    Oval(94, 298, 16, 8, fill='mediumseagreen'),
+    Circle(100, 300, 2, fill='mediumseagreen'),
+    Oval(76, 295, 6, 12, fill='mediumseagreen'),
+    Oval(84, 289, 18, 4, fill='mediumseagreen'),
+    Polygon(101, 297, 93, 289, 85, 289, 76, 289, 76, 302, fill='mediumseagreen'),
+    Polygon(95, 295, 90, 290, 88, 290, 88, 295),
+    Polygon(86, 295, 86, 290, 82, 290, 82, 295),
+    Polygon(80, 295, 80, 290, 78, 290, 78, 290, 76, 292, 76, 295),
+    Circle(78, 293, 2),
+    Circle(95, 302, 3),
+    Circle(80, 302, 3),
+    
+    Rect(217, 281, 6, 5, fill='lightsalmon'),
+    Rect(220, 278, 20, 8, fill='lightsalmon'),
+    Oval(224, 282, 16, 8, fill='lightsalmon'),
+    Circle(218, 284, 2, fill='lightsalmon'),
+    Oval(244, 279, 6, 12, fill='lightsalmon'),
+    Oval(236, 273, 18, 4, fill='lightsalmon'),
+    Polygon(219, 281, 227, 273, 235, 273, 244, 273, 244, 286, fill='lightsalmon'),
+    Polygon(225, 279, 230, 274, 232, 274, 232, 279),
+    Polygon(234, 279, 234, 274, 238, 274, 238, 279),
+    Polygon(240, 279, 240, 274, 242, 274, 242, 274, 244, 276, 244, 279),
+    Circle(242, 277, 2),
+    Circle(222, 286, 3),
+    Circle(240, 286, 3),
+    
+    Rect(175, 264, 6, 5, fill='powderblue'),
+    Rect(178, 261, 20, 8, fill='powderblue'),
+    Oval(180, 265, 16, 8, fill='powderblue'),
+    Circle(174, 267, 2, fill='powderblue'),
+    Oval(198, 265, 6, 8, fill='powderblue'),
+    Polygon(178, 262, 183, 255, 192, 255, 197, 262, fill='powderblue'),
+    Polygon(181, 262, 184, 257, 186, 257, 186, 262),
+    Polygon(188, 262, 188, 257, 190, 257, 193, 262),
+    Circle(179, 269, 3),
+    Circle(194, 269, 3),
+    
+    Rect(283, 331, 6, 5, fill='indigo'),
+    Rect(266, 328, 20, 8, fill='indigo'),
+    Oval(284, 332, 16, 8, fill='indigo'),
+    Circle(290, 334, 2, fill='indigo'),
+    Oval(266, 332, 6, 8, fill='indigo'),
+    Polygon(286, 329, 281, 322, 273, 322, 267, 329, fill='indigo'),
+    Polygon(283, 329, 280, 324, 278, 324, 278, 329),
+    Polygon(276, 329, 276, 324, 274, 324, 271, 329),
+    Circle(285, 336, 3),
+    Circle(270, 336, 3),
+    )
 
 ###onMousePress###
 def onMousePress(mouseX, mouseY):
@@ -915,190 +941,15 @@ def onMousePress(mouseX, mouseY):
         
 ###People/Car Group 1        
 
-        PgOne1_1.toFront()
-        PgOne1_2.toFront()
-        PgOne1_3.toFront()
-        PgOne1_4.toFront()
-        PgOne1_5.toFront()
-        PgOne1_6.toFront()
-        PgOne1_7.toFront()
-        PgOne1_8.toFront()
-        PgOne1_9.toFront()
-        PgOne1_10.toFront()
-        PgOne1_11.toFront()
-    
-        PgOne2_1.toFront()
-        PgOne2_2.toFront()
-        PgOne2_3.toFront()
-        PgOne2_4.toFront()
-        PgOne2_5.toFront()
-        PgOne2_6.toFront()
-        PgOne2_7.toFront()
+        PG1.toFront()
         
-        PgOne3_1.toFront()
-        PgOne3_2.toFront()
-        PgOne3_3.toFront()
-        PgOne3_4.toFront()
-        PgOne3_5.toFront()
-        PgOne3_6.toFront()
-        PgOne3_7.toFront()
-        PgOne3_8.toFront()
-        PgOne3_9.toFront()
-        PgOne3_10.toFront()
-        PgOne3_11.toFront()
-        
-        PgOne4_1.toFront()
-        PgOne4_2.toFront()
-        PgOne4_3.toFront()
-        PgOne4_4.toFront()
-        PgOne4_5.toFront()
-        PgOne4_6.toFront()
-        PgOne4_7.toFront()
-        
-        PgOne5_1.toFront()
-        PgOne5_2.toFront()
-        PgOne5_3.toFront()
-        PgOne5_4.toFront()
-        PgOne5_5.toFront()
-        PgOne5_6.toFront()
-        PgOne5_7.toFront()
-        
-        CgOne1_1.toFront()
-        CgOne1_2.toFront()
-        CgOne1_3.toFront()
-        CgOne1_4.toFront()
-        CgOne1_5.toFront()
-        CgOne1_6.toFront()
-        CgOne1_7.toFront()
-        CgOne1_8.toFront()
-        CgOne1_9.toFront()
-        CgOne1_10.toFront()
-        
-        CgOne2_1.toFront()
-        CgOne2_2.toFront()
-        CgOne2_3.toFront()
-        CgOne2_4.toFront()
-        CgOne2_5.toFront()
-        CgOne2_6.toFront()
-        CgOne2_7.toFront()
-        CgOne2_8.toFront()
-        CgOne2_9.toFront()
-        CgOne2_10.toFront()
-        
-        CgOne3_1.toFront()
-        CgOne3_2.toFront()
-        CgOne3_3.toFront()
-        CgOne3_4.toFront()
-        CgOne3_5.toFront()
-        CgOne3_6.toFront()
-        CgOne3_7.toFront()
-        CgOne3_8.toFront()
-        CgOne3_9.toFront()
-        CgOne3_10.toFront()
-        CgOne3_11.toFront()
-        CgOne3_12.toFront()
-        CgOne3_13.toFront()
-        
-        CgOne4_1.toFront()
-        CgOne4_2.toFront()
-        CgOne4_3.toFront()
-        CgOne4_4.toFront()
-        CgOne4_5.toFront()
-        CgOne4_6.toFront()
-        CgOne4_7.toFront()
-        CgOne4_8.toFront()
-        CgOne4_9.toFront()
-        CgOne4_10.toFront()
-        
-        CgOne5_1.toFront()
-        CgOne5_2.toFront()
-        CgOne5_3.toFront()
-        CgOne5_4.toFront()
-        CgOne5_5.toFront()
-        CgOne5_6.toFront()
-        CgOne5_7.toFront()
-        CgOne5_8.toFront()
-        CgOne5_9.toFront()
-        CgOne5_10.toFront()
-        CgOne5_11.toFront()
-        CgOne5_12.toFront()
-        CgOne5_13.toFront()
+        CG1.toFront()
 
 ###People/Car Group 4 
 
-        CgFour1_1.toBack()
-        CgFour1_2.toBack()
-        CgFour1_3.toBack()
-        CgFour1_4.toBack()
-        CgFour1_5.toBack()
-        CgFour1_6.toBack()
-        CgFour1_7.toBack()
-        CgFour1_8.toBack()
-        CgFour1_9.toBack()
-        CgFour1_10.toBack()
-        CgFour1_11.toBack()
-        CgFour1_12.toBack()
-        CgFour1_13.toBack()
+        PG4.toBack()
         
-        CgFour2_1.toBack()
-        CgFour2_2.toBack()
-        CgFour2_3.toBack()
-        CgFour2_4.toBack()
-        CgFour2_5.toBack()
-        CgFour2_6.toBack()
-        CgFour2_7.toBack()
-        CgFour2_8.toBack()
-        CgFour2_9.toBack()
-        CgFour2_10.toBack()
-        CgFour2_11.toBack()
-        CgFour2_12.toBack()
-        CgFour2_13.toBack()
-        
-        CgFour3_1.toBack()
-        CgFour3_2.toBack()
-        CgFour3_3.toBack()
-        CgFour3_4.toBack()
-        CgFour3_5.toBack()
-        CgFour3_6.toBack()
-        CgFour3_7.toBack()
-        CgFour3_8.toBack()
-        CgFour3_9.toBack()
-        CgFour3_10.toBack()
-        
-        CgFour4_1.toBack()
-        CgFour4_2.toBack()
-        CgFour4_3.toBack()
-        CgFour4_4.toBack()
-        CgFour4_5.toBack()
-        CgFour4_6.toBack()
-        CgFour4_7.toBack()
-        CgFour4_8.toBack()
-        CgFour4_9.toBack()
-        CgFour4_10.toBack()
-        
-        PgFour1_1.toBack()
-        PgFour1_2.toBack()
-        PgFour1_3.toBack()
-        PgFour1_4.toBack()
-        PgFour1_5.toBack()
-        PgFour1_6.toBack()
-        PgFour1_7.toBack()
-        PgFour1_8.toBack()
-        PgFour1_9.toBack()
-        PgFour1_10.toBack()
-        PgFour1_11.toBack()
-        
-        PgFour2_1.toBack()
-        PgFour2_2.toBack()
-        PgFour2_3.toBack()
-        PgFour2_4.toBack()
-        PgFour2_5.toBack()
-        PgFour2_6.toBack()
-        PgFour2_7.toBack()
-        PgFour2_8.toBack()
-        PgFour2_9.toBack()
-        PgFour2_10.toBack()
-        PgFour2_11.toBack()
+        CG4.toBack()
         
         Time2.value='AM'
         
@@ -1107,6 +958,7 @@ def onMousePress(mouseX, mouseY):
         Sky3.toBack()
         Sky4.toBack()
         
+    
     elif (Time1.value=='12:00' and Time2.value=='PM'):
         Sky3.visible=False
         Sky2.visible=True
@@ -1115,290 +967,15 @@ def onMousePress(mouseX, mouseY):
 
 ###People/Car Group 1
 
-        PgOne1_1.toBack()
-        PgOne1_2.toBack()
-        PgOne1_3.toBack()
-        PgOne1_4.toBack()
-        PgOne1_5.toBack()
-        PgOne1_6.toBack()
-        PgOne1_7.toBack()
-        PgOne1_8.toBack()
-        PgOne1_9.toBack()
-        PgOne1_10.toBack()
-        PgOne1_11.toBack()
-    
-        PgOne2_1.toBack()
-        PgOne2_2.toBack()
-        PgOne2_3.toBack()
-        PgOne2_4.toBack()
-        PgOne2_5.toBack()
-        PgOne2_6.toBack()
-        PgOne2_7.toBack()
+        PG1.toBack()
         
-        PgOne3_1.toBack()
-        PgOne3_2.toBack()
-        PgOne3_3.toBack()
-        PgOne3_4.toBack()
-        PgOne3_5.toBack()
-        PgOne3_6.toBack()
-        PgOne3_7.toBack()
-        PgOne3_8.toBack()
-        PgOne3_9.toBack()
-        PgOne3_10.toBack()
-        PgOne3_11.toBack()
-        
-        PgOne4_1.toBack()
-        PgOne4_2.toBack()
-        PgOne4_3.toBack()
-        PgOne4_4.toBack()
-        PgOne4_5.toBack()
-        PgOne4_6.toBack()
-        PgOne4_7.toBack()
-        
-        PgOne5_1.toBack()
-        PgOne5_2.toBack()
-        PgOne5_3.toBack()
-        PgOne5_4.toBack()
-        PgOne5_5.toBack()
-        PgOne5_6.toBack()
-        PgOne5_7.toBack()
-        
-        CgOne1_1.toBack()
-        CgOne1_2.toBack()
-        CgOne1_3.toBack()
-        CgOne1_4.toBack()
-        CgOne1_5.toBack()
-        CgOne1_6.toBack()
-        CgOne1_7.toBack()
-        CgOne1_8.toBack()
-        CgOne1_9.toBack()
-        CgOne1_10.toBack()
-        
-        CgOne2_1.toBack()
-        CgOne2_2.toBack()
-        CgOne2_3.toBack()
-        CgOne2_4.toBack()
-        CgOne2_5.toBack()
-        CgOne2_6.toBack()
-        CgOne2_7.toBack()
-        CgOne2_8.toBack()
-        CgOne2_9.toBack()
-        CgOne2_10.toBack()
-        
-        CgOne3_1.toBack()
-        CgOne3_2.toBack()
-        CgOne3_3.toBack()
-        CgOne3_4.toBack()
-        CgOne3_5.toBack()
-        CgOne3_6.toBack()
-        CgOne3_7.toBack()
-        CgOne3_8.toBack()
-        CgOne3_9.toBack()
-        CgOne3_10.toBack()
-        CgOne3_11.toBack()
-        CgOne3_12.toBack()
-        CgOne3_13.toBack()
-    
-        CgOne4_1.toBack()
-        CgOne4_2.toBack()
-        CgOne4_3.toBack()
-        CgOne4_4.toBack()
-        CgOne4_5.toBack()
-        CgOne4_6.toBack()
-        CgOne4_7.toBack()
-        CgOne4_8.toBack()
-        CgOne4_9.toBack()
-        CgOne4_10.toBack()
-        
-        CgOne5_1.toBack()
-        CgOne5_2.toBack()
-        CgOne5_3.toBack()
-        CgOne5_4.toBack()
-        CgOne5_5.toBack()
-        CgOne5_6.toBack()
-        CgOne5_7.toBack()
-        CgOne5_8.toBack()
-        CgOne5_9.toBack()
-        CgOne5_10.toBack()
-        CgOne5_11.toBack()
-        CgOne5_12.toBack()
-        CgOne5_13.toBack()
+        CG1.toBack()
 
 ###People/Car Group 2
 
-        PgTwo1_1.toFront()
-        PgTwo1_2.toFront()
-        PgTwo1_3.toFront()
-        PgTwo1_4.toFront()
-        PgTwo1_5.toFront()
-        PgTwo1_6.toFront()
-        PgTwo1_7.toFront()
-        
-        PgTwo2_1.toFront()
-        PgTwo2_2.toFront()
-        PgTwo2_3.toFront()
-        PgTwo2_4.toFront()
-        PgTwo2_5.toFront()
-        PgTwo2_6.toFront()
-        PgTwo2_7.toFront()
-        
-        PgTwo3_1.toFront()
-        PgTwo3_2.toFront()
-        PgTwo3_3.toFront()
-        PgTwo3_4.toFront()
-        PgTwo3_5.toFront()
-        PgTwo3_6.toFront()
-        PgTwo3_7.toFront()
-        PgTwo3_8.toFront()
-        PgTwo3_9.toFront()
-        PgTwo3_10.toFront()
-        PgTwo3_11.toFront()
-        
-        PgTwo4_1.toFront()
-        PgTwo4_2.toFront()
-        PgTwo4_3.toFront()
-        PgTwo4_4.toFront()
-        PgTwo4_5.toFront()
-        PgTwo4_6.toFront()
-        PgTwo4_7.toFront()
-        PgTwo4_8.toFront()
-        PgTwo4_9.toFront()
-        PgTwo4_10.toFront()
-        PgTwo4_11.toFront()
-        
-        PgTwo5_1.toFront()
-        PgTwo5_2.toFront()
-        PgTwo5_3.toFront()
-        PgTwo5_4.toFront()
-        PgTwo5_5.toFront()
-        PgTwo5_6.toFront()
-        PgTwo5_7.toFront()
-        PgTwo5_8.toFront()
-        PgTwo5_9.toFront()
-        PgTwo5_10.toFront()
-        PgTwo5_11.toFront()
-        
-        PgTwo6_1.toFront()
-        PgTwo6_2.toFront()
-        PgTwo6_3.toFront()
-        PgTwo6_4.toFront()
-        PgTwo6_5.toFront()
-        PgTwo6_6.toFront()
-        PgTwo6_7.toFront()
-        PgTwo6_8.toFront()
-        PgTwo6_9.toFront()
-        PgTwo6_10.toFront()
-        PgTwo6_11.toFront()
-        
-        PgTwo7_1.toFront()
-        PgTwo7_2.toFront()
-        PgTwo7_3.toFront()
-        PgTwo7_4.toFront()
-        PgTwo7_5.toFront()
-        PgTwo7_6.toFront()
-        PgTwo7_7.toFront()
-        PgTwo7_8.toFront()
-        PgTwo7_9.toFront()
-        PgTwo7_10.toFront()
-        PgTwo7_11.toFront()
-        
-        PgTwo8_1.toFront()
-        PgTwo8_2.toFront()
-        PgTwo8_3.toFront()
-        PgTwo8_4.toFront()
-        PgTwo8_5.toFront()
-        PgTwo8_6.toFront()
-        PgTwo8_7.toFront()
-        
-        CgTwo1_2.toFront()
-        CgTwo1_3.toFront()
-        CgTwo1_4.toFront()
-        CgTwo1_5.toFront()
-        CgTwo1_6.toFront()
-        CgTwo1_7.toFront()
-        CgTwo1_8.toFront()
-        CgTwo1_9.toFront()
-        CgTwo1_10.toFront()
-        
-        CgTwo2_2.toFront()
-        CgTwo2_3.toFront()
-        CgTwo2_4.toFront()
-        CgTwo2_5.toFront()
-        CgTwo2_6.toFront()
-        CgTwo2_7.toFront()
-        CgTwo2_8.toFront()
-        CgTwo2_9.toFront()
-        CgTwo2_10.toFront()
-        
-        CgTwo3_2.toFront()
-        CgTwo3_3.toFront()
-        CgTwo3_4.toFront()
-        CgTwo3_5.toFront()
-        CgTwo3_6.toFront()
-        CgTwo3_7.toFront()
-        CgTwo3_8.toFront()
-        CgTwo3_9.toFront()
-        CgTwo3_10.toFront()
-        
-        CgTwo4_2.toFront()
-        CgTwo4_3.toFront()
-        CgTwo4_4.toFront()
-        CgTwo4_5.toFront()
-        CgTwo4_6.toFront()
-        CgTwo4_7.toFront()
-        CgTwo4_8.toFront()
-        CgTwo4_9.toFront()
-        CgTwo4_10.toFront()
-        
-        CgTwo5_1.toFront()
-        CgTwo5_2.toFront()
-        CgTwo5_3.toFront()
-        CgTwo5_4.toFront()
-        CgTwo5_5.toFront()
-        CgTwo5_6.toFront()
-        CgTwo5_7.toFront()
-        CgTwo5_8.toFront()
-        CgTwo5_9.toFront()
-        CgTwo5_10.toFront()
-        CgTwo5_11.toFront()
-        CgTwo5_12.toFront()
-        CgTwo5_13.toFront()
-        
-        CgTwo6_1.toFront()
-        CgTwo6_2.toFront()
-        CgTwo6_3.toFront()
-        CgTwo6_4.toFront()
-        CgTwo6_5.toFront()
-        CgTwo6_6.toFront()
-        CgTwo6_7.toFront()
-        CgTwo6_8.toFront()
-        CgTwo6_9.toFront()
-        CgTwo6_10.toFront()
-        CgTwo6_11.toFront()
-        CgTwo6_12.toFront()
-        CgTwo6_13.toFront()
-        
-        CgTwo7_1.toFront()
-        CgTwo7_2.toFront()
-        CgTwo7_3.toFront()
-        CgTwo7_4.toFront()
-        CgTwo7_5.toFront()
-        CgTwo7_6.toFront()
-        CgTwo7_7.toFront()
-        CgTwo7_8.toFront()
-        CgTwo7_9.toFront()
-        CgTwo7_10.toFront()
-        
-        CgTwo8_1.toFront()
-        CgTwo8_2.toFront()
-        CgTwo8_3.toFront()
-        CgTwo8_4.toFront()
-        CgTwo8_5.toFront()
-        CgTwo8_6.toFront()
-        CgTwo8_7.toFront()
-        CgTwo8_8.toFront()
-        CgTwo8_9.toFront()
-        CgTwo8_10.toFront()
+        PG2.toFront()
+
+        CG2.toFront()
         
         Time2.value='PM'
         
@@ -1415,400 +992,15 @@ def onMousePress(mouseX, mouseY):
         
 ###People/Car Group 2
 
-        PgTwo1_1.toBack()
-        PgTwo1_2.toBack()
-        PgTwo1_3.toBack()
-        PgTwo1_4.toBack()
-        PgTwo1_5.toBack()
-        PgTwo1_6.toBack()
-        PgTwo1_7.toBack()
+        PG2.toBack()
         
-        PgTwo2_1.toBack()
-        PgTwo2_2.toBack()
-        PgTwo2_3.toBack()
-        PgTwo2_4.toBack()
-        PgTwo2_5.toBack()
-        PgTwo2_6.toBack()
-        PgTwo2_7.toBack()
-        
-        PgTwo3_1.toBack()
-        PgTwo3_2.toBack()
-        PgTwo3_3.toBack()
-        PgTwo3_4.toBack()
-        PgTwo3_5.toBack()
-        PgTwo3_6.toBack()
-        PgTwo3_7.toBack()
-        PgTwo3_8.toBack()
-        PgTwo3_9.toBack()
-        PgTwo3_10.toBack()
-        PgTwo3_11.toBack()
-        
-        PgTwo4_1.toBack()
-        PgTwo4_2.toBack()
-        PgTwo4_3.toBack()
-        PgTwo4_4.toBack()
-        PgTwo4_5.toBack()
-        PgTwo4_6.toBack()
-        PgTwo4_7.toBack()
-        PgTwo4_8.toBack()
-        PgTwo4_9.toBack()
-        PgTwo4_10.toBack()
-        PgTwo4_11.toBack()
-        
-        PgTwo5_1.toBack()
-        PgTwo5_2.toBack()
-        PgTwo5_3.toBack()
-        PgTwo5_4.toBack()
-        PgTwo5_5.toBack()
-        PgTwo5_6.toBack()
-        PgTwo5_7.toBack()
-        PgTwo5_8.toBack()
-        PgTwo5_9.toBack()
-        PgTwo5_10.toBack()
-        PgTwo5_11.toBack()
-        
-        PgTwo6_1.toBack()
-        PgTwo6_2.toBack()
-        PgTwo6_3.toBack()
-        PgTwo6_4.toBack()
-        PgTwo6_5.toBack()
-        PgTwo6_6.toBack()
-        PgTwo6_7.toBack()
-        PgTwo6_8.toBack()
-        PgTwo6_9.toBack()
-        PgTwo6_10.toBack()
-        PgTwo6_11.toBack()
-        
-        PgTwo7_1.toBack()
-        PgTwo7_2.toBack()
-        PgTwo7_3.toBack()
-        PgTwo7_4.toBack()
-        PgTwo7_5.toBack()
-        PgTwo7_6.toBack()
-        PgTwo7_7.toBack()
-        PgTwo7_8.toBack()
-        PgTwo7_9.toBack()
-        PgTwo7_10.toBack()
-        PgTwo7_11.toBack()
-        
-        PgTwo8_1.toBack()
-        PgTwo8_2.toBack()
-        PgTwo8_3.toBack()
-        PgTwo8_4.toBack()
-        PgTwo8_5.toBack()
-        PgTwo8_6.toBack()
-        PgTwo8_7.toBack()
-        
-        CgTwo1_1.toBack()
-        CgTwo1_2.toBack()
-        CgTwo1_3.toBack()
-        CgTwo1_4.toBack()
-        CgTwo1_5.toBack()
-        CgTwo1_6.toBack()
-        CgTwo1_7.toBack()
-        CgTwo1_8.toBack()
-        CgTwo1_9.toBack()
-        CgTwo1_10.toBack()
-        
-        CgTwo2_1.toBack()
-        CgTwo2_2.toBack()
-        CgTwo2_3.toBack()
-        CgTwo2_4.toBack()
-        CgTwo2_5.toBack()
-        CgTwo2_6.toBack()
-        CgTwo2_7.toBack()
-        CgTwo2_8.toBack()
-        CgTwo2_9.toBack()
-        CgTwo2_10.toBack()
-        
-        CgTwo3_1.toBack()
-        CgTwo3_2.toBack()
-        CgTwo3_3.toBack()
-        CgTwo3_4.toBack()
-        CgTwo3_5.toBack()
-        CgTwo3_6.toBack()
-        CgTwo3_7.toBack()
-        CgTwo3_8.toBack()
-        CgTwo3_9.toBack()
-        CgTwo3_10.toBack()
-        
-        CgTwo4_1.toBack()
-        CgTwo4_2.toBack()
-        CgTwo4_3.toBack()
-        CgTwo4_4.toBack()
-        CgTwo4_5.toBack()
-        CgTwo4_6.toBack()
-        CgTwo4_7.toBack()
-        CgTwo4_8.toBack()
-        CgTwo4_9.toBack()
-        CgTwo4_10.toBack()
-        
-        CgTwo5_1.toBack()
-        CgTwo5_2.toBack()
-        CgTwo5_3.toBack()
-        CgTwo5_4.toBack()
-        CgTwo5_5.toBack()
-        CgTwo5_6.toBack()
-        CgTwo5_7.toBack()
-        CgTwo5_8.toBack()
-        CgTwo5_9.toBack()
-        CgTwo5_10.toBack()
-        CgTwo5_11.toBack()
-        CgTwo5_12.toBack()
-        CgTwo5_13.toBack()
-        
-        CgTwo6_1.toBack()
-        CgTwo6_2.toBack()
-        CgTwo6_3.toBack()
-        CgTwo6_4.toBack()
-        CgTwo6_5.toBack()
-        CgTwo6_6.toBack()
-        CgTwo6_7.toBack()
-        CgTwo6_8.toBack()
-        CgTwo6_9.toBack()
-        CgTwo6_10.toBack()
-        CgTwo6_11.toBack()
-        CgTwo6_12.toBack()
-        CgTwo6_13.toBack()
-        
-        CgTwo7_1.toBack()
-        CgTwo7_2.toBack()
-        CgTwo7_3.toBack()
-        CgTwo7_4.toBack()
-        CgTwo7_5.toBack()
-        CgTwo7_6.toBack()
-        CgTwo7_7.toBack()
-        CgTwo7_8.toBack()
-        CgTwo7_9.toBack()
-        CgTwo7_10.toBack()
-        
-        CgTwo8_1.toBack()
-        CgTwo8_2.toBack()
-        CgTwo8_3.toBack()
-        CgTwo8_4.toBack()
-        CgTwo8_5.toBack()
-        CgTwo8_6.toBack()
-        CgTwo8_7.toBack()
-        CgTwo8_8.toBack()
-        CgTwo8_9.toBack()
-        CgTwo8_10.toBack()
-        
+        CG2.toBack()
+
 ###People/Car Group 3
 
-        PgThree1_1.toFront()
-        PgThree1_2.toFront()
-        PgThree1_3.toFront()
-        PgThree1_4.toFront()
-        PgThree1_5.toFront()
-        PgThree1_6.toFront()
-        PgThree1_7.toFront()
+        PG3.toFront()
         
-        PgThree2_1.toFront()
-        PgThree2_2.toFront()
-        PgThree2_3.toFront()
-        PgThree2_4.toFront()
-        PgThree2_5.toFront()
-        PgThree2_6.toFront()
-        PgThree2_7.toFront()
-        
-        PgThree3_1.toFront()
-        PgThree3_2.toFront()
-        PgThree3_3.toFront()
-        PgThree3_4.toFront()
-        PgThree3_5.toFront()
-        PgThree3_6.toFront()
-        PgThree3_7.toFront()
-        
-        PgThree4_1.toFront()
-        PgThree4_2.toFront()
-        PgThree4_3.toFront()
-        PgThree4_4.toFront()
-        PgThree4_5.toFront()
-        PgThree4_6.toFront()
-        PgThree4_7.toFront()
-        PgThree4_8.toFront()
-        PgThree4_9.toFront()
-        PgThree4_10.toFront()
-        PgThree4_11.toFront()
-        
-        PgThree5_1.toFront()
-        PgThree5_2.toFront()
-        PgThree5_3.toFront()
-        PgThree5_4.toFront()
-        PgThree5_5.toFront()
-        PgThree5_6.toFront()
-        PgThree5_7.toFront()
-        PgThree5_8.toFront()
-        PgThree5_9.toFront()
-        PgThree5_10.toFront()
-        PgThree5_11.toFront()
-        
-        PgThree6_1.toFront()
-        PgThree6_2.toFront()
-        PgThree6_3.toFront()
-        PgThree6_4.toFront()
-        PgThree6_5.toFront()
-        PgThree6_6.toFront()
-        PgThree6_7.toFront()
-        PgThree6_8.toFront()
-        PgThree6_9.toFront()
-        PgThree6_10.toFront()
-        PgThree6_11.toFront()
-
-        CgThree1_1.toFront()
-        CgThree1_2.toFront()
-        CgThree1_3.toFront()
-        CgThree1_4.toFront()
-        CgThree1_5.toFront()
-        CgThree1_6.toFront()
-        CgThree1_7.toFront()
-        CgThree1_8.toFront()
-        CgThree1_9.toFront()
-        CgThree1_10.toFront()
-        
-        CgThree2_1.toFront()
-        CgThree2_2.toFront()
-        CgThree2_3.toFront()
-        CgThree2_4.toFront()
-        CgThree2_5.toFront()
-        CgThree2_6.toFront()
-        CgThree2_7.toFront()
-        CgThree2_8.toFront()
-        CgThree2_9.toFront()
-        CgThree2_10.toFront()
-        
-        CgThree3_1.toFront()
-        CgThree3_2.toFront()
-        CgThree3_3.toFront()
-        CgThree3_4.toFront()
-        CgThree3_5.toFront()
-        CgThree3_6.toFront()
-        CgThree3_7.toFront()
-        CgThree3_8.toFront()
-        CgThree3_9.toFront()
-        CgThree3_10.toFront()
-        CgThree3_11.toFront()
-        CgThree3_12.toFront()
-        CgThree3_13.toFront()
-        
-        CgThree4_1.toFront()
-        CgThree4_2.toFront()
-        CgThree4_3.toFront()
-        CgThree4_4.toFront()
-        CgThree4_5.toFront()
-        CgThree4_6.toFront()
-        CgThree4_7.toFront()
-        CgThree4_8.toFront()
-        CgThree4_9.toFront()
-        CgThree4_10.toFront()
-        
-        CgThree5_1.toFront()
-        CgThree5_2.toFront()
-        CgThree5_3.toFront()
-        CgThree5_4.toFront()
-        CgThree5_5.toFront()
-        CgThree5_6.toFront()
-        CgThree5_7.toFront()
-        CgThree5_8.toFront()
-        CgThree5_9.toFront()
-        CgThree5_10.toFront()
-        
-        CgThree6_1.toFront()
-        CgThree6_2.toFront()
-        CgThree6_3.toFront()
-        CgThree6_4.toFront()
-        CgThree6_5.toFront()
-        CgThree6_6.toFront()
-        CgThree6_7.toFront()
-        CgThree6_8.toFront()
-        CgThree6_9.toFront()
-        CgThree6_10.toFront()
-        
-        CgThree7_1.toFront()
-        CgThree7_2.toFront()
-        CgThree7_3.toFront()
-        CgThree7_4.toFront()
-        CgThree7_5.toFront()
-        CgThree7_6.toFront()
-        CgThree7_7.toFront()
-        CgThree7_8.toFront()
-        CgThree7_9.toFront()
-        CgThree7_10.toFront()
-        
-        CgThree8_1.toFront()
-        CgThree8_2.toFront()
-        CgThree8_3.toFront()
-        CgThree8_4.toFront()
-        CgThree8_5.toFront()
-        CgThree8_6.toFront()
-        CgThree8_7.toFront()
-        CgThree8_8.toFront()
-        CgThree8_9.toFront()
-        CgThree8_10.toFront()
-        CgThree8_11.toFront()
-        CgThree8_12.toFront()
-        CgThree8_13.toFront()
-        
-        CgThree9_1.toFront()
-        CgThree9_2.toFront()
-        CgThree9_3.toFront()
-        CgThree9_4.toFront()
-        CgThree9_5.toFront()
-        CgThree9_6.toFront()
-        CgThree9_7.toFront()
-        CgThree9_8.toFront()
-        CgThree9_9.toFront()
-        CgThree9_10.toFront()
-        CgThree9_11.toFront()
-        CgThree9_12.toFront()
-        CgThree9_13.toFront()
-        
-        CgThree10_1.toFront()
-        CgThree10_2.toFront()
-        CgThree10_3.toFront()
-        CgThree10_4.toFront()
-        CgThree10_5.toFront()
-        CgThree10_6.toFront()
-        CgThree10_7.toFront()
-        CgThree10_8.toFront()
-        CgThree10_9.toFront()
-        CgThree10_10.toFront()
-        CgThree10_11.toFront()
-        CgThree10_12.toFront()
-        CgThree10_13.toFront()
-        
-        CgThree11_1.toFront()
-        CgThree11_2.toFront()
-        CgThree11_3.toFront()
-        CgThree11_4.toFront()
-        CgThree11_5.toFront()
-        CgThree11_6.toFront()
-        CgThree11_7.toFront()
-        CgThree11_8.toFront()
-        CgThree11_9.toFront()
-        CgThree11_10.toFront()
-        
-        CgThree12_1.toFront()
-        CgThree12_2.toFront()
-        CgThree12_3.toFront()
-        CgThree12_4.toFront()
-        CgThree12_5.toFront()
-        CgThree12_6.toFront()
-        CgThree12_7.toFront()
-        CgThree12_8.toFront()
-        CgThree12_9.toFront()
-        CgThree12_10.toFront()
-        
-        CgThree13_1.toFront()
-        CgThree13_2.toFront()
-        CgThree13_3.toFront()
-        CgThree13_4.toFront()
-        CgThree13_5.toFront()
-        CgThree13_6.toFront()
-        CgThree13_7.toFront()
-        CgThree13_8.toFront()
-        CgThree13_9.toFront()
-        CgThree13_10.toFront()
+        CG3.toFront()
         
         Time2.value='PM'
         
@@ -1825,296 +1017,15 @@ def onMousePress(mouseX, mouseY):
         
 ###People/Car Group 3 
 
-        PgThree1_1.toBack()
-        PgThree1_2.toBack()
-        PgThree1_3.toBack()
-        PgThree1_4.toBack()
-        PgThree1_5.toBack()
-        PgThree1_6.toBack()
-        PgThree1_7.toBack()
+        PG3.toBack()
         
-        PgThree2_1.toBack()
-        PgThree2_2.toBack()
-        PgThree2_3.toBack()
-        PgThree2_4.toBack()
-        PgThree2_5.toBack()
-        PgThree2_6.toBack()
-        PgThree2_7.toBack()
-        
-        PgThree3_1.toBack()
-        PgThree3_2.toBack()
-        PgThree3_3.toBack()
-        PgThree3_4.toBack()
-        PgThree3_5.toBack()
-        PgThree3_6.toBack()
-        PgThree3_7.toBack()
-        
-        PgThree4_1.toBack()
-        PgThree4_2.toBack()
-        PgThree4_3.toBack()
-        PgThree4_4.toBack()
-        PgThree4_5.toBack()
-        PgThree4_6.toBack()
-        PgThree4_7.toBack()
-        PgThree4_8.toBack()
-        PgThree4_9.toBack()
-        PgThree4_10.toBack()
-        PgThree4_11.toBack()
-        
-        PgThree5_1.toBack()
-        PgThree5_2.toBack()
-        PgThree5_3.toBack()
-        PgThree5_4.toBack()
-        PgThree5_5.toBack()
-        PgThree5_6.toBack()
-        PgThree5_7.toBack()
-        PgThree5_8.toBack()
-        PgThree5_9.toBack()
-        PgThree5_10.toBack()
-        PgThree5_11.toBack()
-        
-        PgThree6_1.toBack()
-        PgThree6_2.toBack()
-        PgThree6_3.toBack()
-        PgThree6_4.toBack()
-        PgThree6_5.toBack()
-        PgThree6_6.toBack()
-        PgThree6_7.toBack()
-        PgThree6_8.toBack()
-        PgThree6_9.toBack()
-        PgThree6_10.toBack()
-        PgThree6_11.toBack()
-        
-        CgThree1_1.toBack()
-        CgThree1_2.toBack()
-        CgThree1_3.toBack()
-        CgThree1_4.toBack()
-        CgThree1_5.toBack()
-        CgThree1_6.toBack()
-        CgThree1_7.toBack()
-        CgThree1_8.toBack()
-        CgThree1_9.toBack()
-        CgThree1_10.toBack()
-        
-        CgThree2_1.toBack()
-        CgThree2_2.toBack()
-        CgThree2_3.toBack()
-        CgThree2_4.toBack()
-        CgThree2_5.toBack()
-        CgThree2_6.toBack()
-        CgThree2_7.toBack()
-        CgThree2_8.toBack()
-        CgThree2_9.toBack()
-        CgThree2_10.toBack()
-        
-        CgThree3_1.toBack()
-        CgThree3_2.toBack()
-        CgThree3_3.toBack()
-        CgThree3_4.toBack()
-        CgThree3_5.toBack()
-        CgThree3_6.toBack()
-        CgThree3_7.toBack()
-        CgThree3_8.toBack()
-        CgThree3_9.toBack()
-        CgThree3_10.toBack()
-        CgThree3_11.toBack()
-        CgThree3_12.toBack()
-        CgThree3_13.toBack()
-        
-        CgThree4_1.toBack()
-        CgThree4_2.toBack()
-        CgThree4_3.toBack()
-        CgThree4_4.toBack()
-        CgThree4_5.toBack()
-        CgThree4_6.toBack()
-        CgThree4_7.toBack()
-        CgThree4_8.toBack()
-        CgThree4_9.toBack()
-        CgThree4_10.toBack()
-        
-        CgThree5_1.toBack()
-        CgThree5_2.toBack()
-        CgThree5_3.toBack()
-        CgThree5_4.toBack()
-        CgThree5_5.toBack()
-        CgThree5_6.toBack()
-        CgThree5_7.toBack()
-        CgThree5_8.toBack()
-        CgThree5_9.toBack()
-        CgThree5_10.toBack()
-        
-        CgThree6_1.toBack()
-        CgThree6_2.toBack()
-        CgThree6_3.toBack()
-        CgThree6_4.toBack()
-        CgThree6_5.toBack()
-        CgThree6_6.toBack()
-        CgThree6_7.toBack()
-        CgThree6_8.toBack()
-        CgThree6_9.toBack()
-        CgThree6_10.toBack()
-        
-        CgThree7_1.toBack()
-        CgThree7_2.toBack()
-        CgThree7_3.toBack()
-        CgThree7_4.toBack()
-        CgThree7_5.toBack()
-        CgThree7_6.toBack()
-        CgThree7_7.toBack()
-        CgThree7_8.toBack()
-        CgThree7_9.toBack()
-        CgThree7_10.toBack()
-        
-        CgThree8_1.toBack()
-        CgThree8_2.toBack()
-        CgThree8_3.toBack()
-        CgThree8_4.toBack()
-        CgThree8_5.toBack()
-        CgThree8_6.toBack()
-        CgThree8_7.toBack()
-        CgThree8_8.toBack()
-        CgThree8_9.toBack()
-        CgThree8_10.toBack()
-        CgThree8_11.toBack()
-        CgThree8_12.toBack()
-        CgThree8_13.toBack()
-        
-        CgThree9_1.toBack()
-        CgThree9_2.toBack()
-        CgThree9_3.toBack()
-        CgThree9_4.toBack()
-        CgThree9_5.toBack()
-        CgThree9_6.toBack()
-        CgThree9_7.toBack()
-        CgThree9_8.toBack()
-        CgThree9_9.toBack()
-        CgThree9_10.toBack()
-        CgThree9_11.toBack()
-        CgThree9_12.toBack()
-        CgThree9_13.toBack()
-        
-        CgThree10_1.toBack()
-        CgThree10_2.toBack()
-        CgThree10_3.toBack()
-        CgThree10_4.toBack()
-        CgThree10_5.toBack()
-        CgThree10_6.toBack()
-        CgThree10_7.toBack()
-        CgThree10_8.toBack()
-        CgThree10_9.toBack()
-        CgThree10_10.toBack()
-        CgThree10_11.toBack()
-        CgThree10_12.toBack()
-        CgThree10_13.toBack()
-        
-        CgThree11_1.toBack()
-        CgThree11_2.toBack()
-        CgThree11_3.toBack()
-        CgThree11_4.toBack()
-        CgThree11_5.toBack()
-        CgThree11_6.toBack()
-        CgThree11_7.toBack()
-        CgThree11_8.toBack()
-        CgThree11_9.toBack()
-        CgThree11_10.toBack()
-        
-        CgThree12_1.toBack()
-        CgThree12_2.toBack()
-        CgThree12_3.toBack()
-        CgThree12_4.toBack()
-        CgThree12_5.toBack()
-        CgThree12_6.toBack()
-        CgThree12_7.toBack()
-        CgThree12_8.toBack()
-        CgThree12_9.toBack()
-        CgThree12_10.toBack()
-        
-        CgThree13_1.toBack()
-        CgThree13_2.toBack()
-        CgThree13_3.toBack()
-        CgThree13_4.toBack()
-        CgThree13_5.toBack()
-        CgThree13_6.toBack()
-        CgThree13_7.toBack()
-        CgThree13_8.toBack()
-        CgThree13_9.toBack()
-        CgThree13_10.toBack()
+        CG3.toBack()
         
 ###People/Car Group 4 
 
-        CgFour1_1.toFront()
-        CgFour1_2.toFront()
-        CgFour1_3.toFront()
-        CgFour1_4.toFront()
-        CgFour1_5.toFront()
-        CgFour1_6.toFront()
-        CgFour1_7.toFront()
-        CgFour1_8.toFront()
-        CgFour1_9.toFront()
-        CgFour1_10.toFront()
-        CgFour1_11.toFront()
-        CgFour1_12.toFront()
-        CgFour1_13.toFront()
+        PG4.toFront()
         
-        CgFour2_1.toFront()
-        CgFour2_2.toFront()
-        CgFour2_3.toFront()
-        CgFour2_4.toFront()
-        CgFour2_5.toFront()
-        CgFour2_6.toFront()
-        CgFour2_7.toFront()
-        CgFour2_8.toFront()
-        CgFour2_9.toFront()
-        CgFour2_10.toFront()
-        CgFour2_11.toFront()
-        CgFour2_12.toFront()
-        CgFour2_13.toFront()
-        
-        CgFour3_1.toFront()
-        CgFour3_2.toFront()
-        CgFour3_3.toFront()
-        CgFour3_4.toFront()
-        CgFour3_5.toFront()
-        CgFour3_6.toFront()
-        CgFour3_7.toFront()
-        CgFour3_8.toFront()
-        CgFour3_9.toFront()
-        CgFour3_10.toFront()
-        
-        CgFour4_1.toFront()
-        CgFour4_2.toFront()
-        CgFour4_3.toFront()
-        CgFour4_4.toFront()
-        CgFour4_5.toFront()
-        CgFour4_6.toFront()
-        CgFour4_7.toFront()
-        CgFour4_8.toFront()
-        CgFour4_9.toFront()
-        CgFour4_10.toFront()
-        
-        PgFour1_1.toFront()
-        PgFour1_2.toFront()
-        PgFour1_3.toFront()
-        PgFour1_4.toFront()
-        PgFour1_5.toFront()
-        PgFour1_6.toFront()
-        PgFour1_7.toFront()
-        PgFour1_8.toFront()
-        PgFour1_9.toFront()
-        PgFour1_10.toFront()
-        PgFour1_11.toFront()
-        
-        PgFour2_1.toFront()
-        PgFour2_2.toFront()
-        PgFour2_3.toFront()
-        PgFour2_4.toFront()
-        PgFour2_5.toFront()
-        PgFour2_6.toFront()
-        PgFour2_7.toFront()
-        PgFour2_8.toFront()
-        PgFour2_9.toFront()
-        PgFour2_10.toFront()
-        PgFour2_11.toFront()
+        CG4.toFront()
         
         Time2.value='AM'
         
@@ -2125,487 +1036,21 @@ def onMousePress(mouseX, mouseY):
 
 ###People/Car Group 2
 
-PgTwo1_1.toBack()
-PgTwo1_2.toBack()
-PgTwo1_3.toBack()
-PgTwo1_4.toBack()
-PgTwo1_5.toBack()
-PgTwo1_6.toBack()
-PgTwo1_7.toBack()
+PG2.toBack()
 
-PgTwo2_1.toBack()
-PgTwo2_2.toBack()
-PgTwo2_3.toBack()
-PgTwo2_4.toBack()
-PgTwo2_5.toBack()
-PgTwo2_6.toBack()
-PgTwo2_7.toBack()
-
-PgTwo3_1.toBack()
-PgTwo3_2.toBack()
-PgTwo3_3.toBack()
-PgTwo3_4.toBack()
-PgTwo3_5.toBack()
-PgTwo3_6.toBack()
-PgTwo3_7.toBack()
-PgTwo3_8.toBack()
-PgTwo3_9.toBack()
-PgTwo3_10.toBack()
-PgTwo3_11.toBack()
-
-PgTwo4_1.toBack()
-PgTwo4_2.toBack()
-PgTwo4_3.toBack()
-PgTwo4_4.toBack()
-PgTwo4_5.toBack()
-PgTwo4_6.toBack()
-PgTwo4_7.toBack()
-PgTwo4_8.toBack()
-PgTwo4_9.toBack()
-PgTwo4_10.toBack()
-PgTwo4_11.toBack()
-
-PgTwo5_1.toBack()
-PgTwo5_2.toBack()
-PgTwo5_3.toBack()
-PgTwo5_4.toBack()
-PgTwo5_5.toBack()
-PgTwo5_6.toBack()
-PgTwo5_7.toBack()
-PgTwo5_8.toBack()
-PgTwo5_9.toBack()
-PgTwo5_10.toBack()
-PgTwo5_11.toBack()
-
-PgTwo6_1.toBack()
-PgTwo6_2.toBack()
-PgTwo6_3.toBack()
-PgTwo6_4.toBack()
-PgTwo6_5.toBack()
-PgTwo6_6.toBack()
-PgTwo6_7.toBack()
-PgTwo6_8.toBack()
-PgTwo6_9.toBack()
-PgTwo6_10.toBack()
-PgTwo6_11.toBack()
-
-PgTwo7_1.toBack()
-PgTwo7_2.toBack()
-PgTwo7_3.toBack()
-PgTwo7_4.toBack()
-PgTwo7_5.toBack()
-PgTwo7_6.toBack()
-PgTwo7_7.toBack()
-PgTwo7_8.toBack()
-PgTwo7_9.toBack()
-PgTwo7_10.toBack()
-PgTwo7_11.toBack()
-
-PgTwo8_1.toBack()
-PgTwo8_2.toBack()
-PgTwo8_3.toBack()
-PgTwo8_4.toBack()
-PgTwo8_5.toBack()
-PgTwo8_6.toBack()
-PgTwo8_7.toBack()
-
-CgTwo1_1.toBack()
-CgTwo1_2.toBack()
-CgTwo1_3.toBack()
-CgTwo1_4.toBack()
-CgTwo1_5.toBack()
-CgTwo1_6.toBack()
-CgTwo1_7.toBack()
-CgTwo1_8.toBack()
-CgTwo1_9.toBack()
-CgTwo1_10.toBack()
-
-CgTwo2_1.toBack()
-CgTwo2_2.toBack()
-CgTwo2_3.toBack()
-CgTwo2_4.toBack()
-CgTwo2_5.toBack()
-CgTwo2_6.toBack()
-CgTwo2_7.toBack()
-CgTwo2_8.toBack()
-CgTwo2_9.toBack()
-CgTwo2_10.toBack()
-
-CgTwo3_1.toBack()
-CgTwo3_2.toBack()
-CgTwo3_3.toBack()
-CgTwo3_4.toBack()
-CgTwo3_5.toBack()
-CgTwo3_6.toBack()
-CgTwo3_7.toBack()
-CgTwo3_8.toBack()
-CgTwo3_9.toBack()
-CgTwo3_10.toBack()
-
-CgTwo4_1.toBack()
-CgTwo4_2.toBack()
-CgTwo4_3.toBack()
-CgTwo4_4.toBack()
-CgTwo4_5.toBack()
-CgTwo4_6.toBack()
-CgTwo4_7.toBack()
-CgTwo4_8.toBack()
-CgTwo4_9.toBack()
-CgTwo4_10.toBack()
-
-CgTwo5_1.toBack()
-CgTwo5_2.toBack()
-CgTwo5_3.toBack()
-CgTwo5_4.toBack()
-CgTwo5_5.toBack()
-CgTwo5_6.toBack()
-CgTwo5_7.toBack()
-CgTwo5_8.toBack()
-CgTwo5_9.toBack()
-CgTwo5_10.toBack()
-CgTwo5_11.toBack()
-CgTwo5_12.toBack()
-CgTwo5_13.toBack()
-
-CgTwo6_1.toBack()
-CgTwo6_2.toBack()
-CgTwo6_3.toBack()
-CgTwo6_4.toBack()
-CgTwo6_5.toBack()
-CgTwo6_6.toBack()
-CgTwo6_7.toBack()
-CgTwo6_8.toBack()
-CgTwo6_9.toBack()
-CgTwo6_10.toBack()
-CgTwo6_11.toBack()
-CgTwo6_12.toBack()
-CgTwo6_13.toBack()
-
-CgTwo7_1.toBack()
-CgTwo7_2.toBack()
-CgTwo7_3.toBack()
-CgTwo7_4.toBack()
-CgTwo7_5.toBack()
-CgTwo7_6.toBack()
-CgTwo7_7.toBack()
-CgTwo7_8.toBack()
-CgTwo7_9.toBack()
-CgTwo7_10.toBack()
-
-CgTwo8_1.toBack()
-CgTwo8_2.toBack()
-CgTwo8_3.toBack()
-CgTwo8_4.toBack()
-CgTwo8_5.toBack()
-CgTwo8_6.toBack()
-CgTwo8_7.toBack()
-CgTwo8_8.toBack()
-CgTwo8_9.toBack()
-CgTwo8_10.toBack()
+CG2.toBack()
 
 ###People/Car Group 3
 
-PgThree1_1.toBack()
-PgThree1_2.toBack()
-PgThree1_3.toBack()
-PgThree1_4.toBack()
-PgThree1_5.toBack()
-PgThree1_6.toBack()
-PgThree1_7.toBack()
-        
-PgThree2_1.toBack()
-PgThree2_2.toBack()
-PgThree2_3.toBack()
-PgThree2_4.toBack()
-PgThree2_5.toBack()
-PgThree2_6.toBack()
-PgThree2_7.toBack()
+PG3.toBack()
 
-PgThree3_1.toBack()
-PgThree3_2.toBack()
-PgThree3_3.toBack()
-PgThree3_4.toBack()
-PgThree3_5.toBack()
-PgThree3_6.toBack()
-PgThree3_7.toBack()
-
-PgThree4_1.toBack()
-PgThree4_2.toBack()
-PgThree4_3.toBack()
-PgThree4_4.toBack()
-PgThree4_5.toBack()
-PgThree4_6.toBack()
-PgThree4_7.toBack()
-PgThree4_8.toBack()
-PgThree4_9.toBack()
-PgThree4_10.toBack()
-PgThree4_11.toBack()
-
-PgThree5_1.toBack()
-PgThree5_2.toBack()
-PgThree5_3.toBack()
-PgThree5_4.toBack()
-PgThree5_5.toBack()
-PgThree5_6.toBack()
-PgThree5_7.toBack()
-PgThree5_8.toBack()
-PgThree5_9.toBack()
-PgThree5_10.toBack()
-PgThree5_11.toBack()
-
-PgThree6_1.toBack()
-PgThree6_2.toBack()
-PgThree6_3.toBack()
-PgThree6_4.toBack()
-PgThree6_5.toBack()
-PgThree6_6.toBack()
-PgThree6_7.toBack()
-PgThree6_8.toBack()
-PgThree6_9.toBack()
-PgThree6_10.toBack()
-PgThree6_11.toBack()
-
-CgThree1_1.toBack()
-CgThree1_2.toBack()
-CgThree1_3.toBack()
-CgThree1_4.toBack()
-CgThree1_5.toBack()
-CgThree1_6.toBack()
-CgThree1_7.toBack()
-CgThree1_8.toBack()
-CgThree1_9.toBack()
-CgThree1_10.toBack()
-
-CgThree2_1.toBack()
-CgThree2_2.toBack()
-CgThree2_3.toBack()
-CgThree2_4.toBack()
-CgThree2_5.toBack()
-CgThree2_6.toBack()
-CgThree2_7.toBack()
-CgThree2_8.toBack()
-CgThree2_9.toBack()
-CgThree2_10.toBack()
-
-CgThree3_1.toBack()
-CgThree3_2.toBack()
-CgThree3_3.toBack()
-CgThree3_4.toBack()
-CgThree3_5.toBack()
-CgThree3_6.toBack()
-CgThree3_7.toBack()
-CgThree3_8.toBack()
-CgThree3_9.toBack()
-CgThree3_10.toBack()
-CgThree3_11.toBack()
-CgThree3_12.toBack()
-CgThree3_13.toBack()
-
-CgThree4_1.toBack()
-CgThree4_2.toBack()
-CgThree4_3.toBack()
-CgThree4_4.toBack()
-CgThree4_5.toBack()
-CgThree4_6.toBack()
-CgThree4_7.toBack()
-CgThree4_8.toBack()
-CgThree4_9.toBack()
-CgThree4_10.toBack()
-
-CgThree4_1.toBack()
-CgThree4_2.toBack()
-CgThree4_3.toBack()
-CgThree4_4.toBack()
-CgThree4_5.toBack()
-CgThree4_6.toBack()
-CgThree4_7.toBack()
-CgThree4_8.toBack()
-CgThree4_9.toBack()
-CgThree4_10.toBack()
-
-CgThree5_1.toBack()
-CgThree5_2.toBack()
-CgThree5_3.toBack()
-CgThree5_4.toBack()
-CgThree5_5.toBack()
-CgThree5_6.toBack()
-CgThree5_7.toBack()
-CgThree5_8.toBack()
-CgThree5_9.toBack()
-CgThree5_10.toBack()
-
-CgThree6_1.toBack()
-CgThree6_2.toBack()
-CgThree6_3.toBack()
-CgThree6_4.toBack()
-CgThree6_5.toBack()
-CgThree6_6.toBack()
-CgThree6_7.toBack()
-CgThree6_8.toBack()
-CgThree6_9.toBack()
-CgThree6_10.toBack()
-
-CgThree7_1.toBack()
-CgThree7_2.toBack()
-CgThree7_3.toBack()
-CgThree7_4.toBack()
-CgThree7_5.toBack()
-CgThree7_6.toBack()
-CgThree7_7.toBack()
-CgThree7_8.toBack()
-CgThree7_9.toBack()
-CgThree7_10.toBack()
-
-CgThree8_1.toBack()
-CgThree8_2.toBack()
-CgThree8_3.toBack()
-CgThree8_4.toBack()
-CgThree8_5.toBack()
-CgThree8_6.toBack()
-CgThree8_7.toBack()
-CgThree8_8.toBack()
-CgThree8_9.toBack()
-CgThree8_10.toBack()
-CgThree8_11.toBack()
-CgThree8_12.toBack()
-CgThree8_13.toBack()
-
-CgThree9_1.toBack()
-CgThree9_2.toBack()
-CgThree9_3.toBack()
-CgThree9_4.toBack()
-CgThree9_5.toBack()
-CgThree9_6.toBack()
-CgThree9_7.toBack()
-CgThree9_8.toBack()
-CgThree9_9.toBack()
-CgThree9_10.toBack()
-CgThree9_11.toBack()
-CgThree9_12.toBack()
-CgThree9_13.toBack()
-
-CgThree10_1.toBack()
-CgThree10_2.toBack()
-CgThree10_3.toBack()
-CgThree10_4.toBack()
-CgThree10_5.toBack()
-CgThree10_6.toBack()
-CgThree10_7.toBack()
-CgThree10_8.toBack()
-CgThree10_9.toBack()
-CgThree10_10.toBack()
-CgThree10_11.toBack()
-CgThree10_12.toBack()
-CgThree10_13.toBack()
-
-CgThree11_1.toBack()
-CgThree11_2.toBack()
-CgThree11_3.toBack()
-CgThree11_4.toBack()
-CgThree11_5.toBack()
-CgThree11_6.toBack()
-CgThree11_7.toBack()
-CgThree11_8.toBack()
-CgThree11_9.toBack()
-CgThree11_10.toBack()
-
-CgThree12_1.toBack()
-CgThree12_2.toBack()
-CgThree12_3.toBack()
-CgThree12_4.toBack()
-CgThree12_5.toBack()
-CgThree12_6.toBack()
-CgThree12_7.toBack()
-CgThree12_8.toBack()
-CgThree12_9.toBack()
-CgThree12_10.toBack()
-
-CgThree13_1.toBack()
-CgThree13_2.toBack()
-CgThree13_3.toBack()
-CgThree13_4.toBack()
-CgThree13_5.toBack()
-CgThree13_6.toBack()
-CgThree13_7.toBack()
-CgThree13_8.toBack()
-CgThree13_9.toBack()
-CgThree13_10.toBack()
+CG3.toBack()
 
 ###People/Car Group 4
 
-CgFour1_1.toBack()
-CgFour1_2.toBack()
-CgFour1_3.toBack()
-CgFour1_4.toBack()
-CgFour1_5.toBack()
-CgFour1_6.toBack()
-CgFour1_7.toBack()
-CgFour1_8.toBack()
-CgFour1_9.toBack()
-CgFour1_10.toBack()
-CgFour1_11.toBack()
-CgFour1_12.toBack()
-CgFour1_13.toBack()
+PG4.toBack()
 
-CgFour2_1.toBack()
-CgFour2_2.toBack()
-CgFour2_3.toBack()
-CgFour2_4.toBack()
-CgFour2_5.toBack()
-CgFour2_6.toBack()
-CgFour2_7.toBack()
-CgFour2_8.toBack()
-CgFour2_9.toBack()
-CgFour2_10.toBack()
-CgFour2_11.toBack()
-CgFour2_12.toBack()
-CgFour2_13.toBack()
-
-CgFour3_1.toBack()
-CgFour3_2.toBack()
-CgFour3_3.toBack()
-CgFour3_4.toBack()
-CgFour3_5.toBack()
-CgFour3_6.toBack()
-CgFour3_7.toBack()
-CgFour3_8.toBack()
-CgFour3_9.toBack()
-CgFour3_10.toBack()
-
-CgFour4_1.toBack()
-CgFour4_2.toBack()
-CgFour4_3.toBack()
-CgFour4_4.toBack()
-CgFour4_5.toBack()
-CgFour4_6.toBack()
-CgFour4_7.toBack()
-CgFour4_8.toBack()
-CgFour4_9.toBack()
-CgFour4_10.toBack()
-
-PgFour1_1.toBack()
-PgFour1_2.toBack()
-PgFour1_3.toBack()
-PgFour1_4.toBack()
-PgFour1_5.toBack()
-PgFour1_6.toBack()
-PgFour1_7.toBack()
-PgFour1_8.toBack()
-PgFour1_9.toBack()
-PgFour1_10.toBack()
-PgFour1_11.toBack()
-
-PgFour2_1.toBack()
-PgFour2_2.toBack()
-PgFour2_3.toBack()
-PgFour2_4.toBack()
-PgFour2_5.toBack()
-PgFour2_6.toBack()
-PgFour2_7.toBack()
-PgFour2_8.toBack()
-PgFour2_9.toBack()
-PgFour2_10.toBack()
-PgFour2_11.toBack()
+CG4.toBack()
 
 
 TimeBox.toFront()
